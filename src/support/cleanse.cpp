@@ -24,8 +24,7 @@
  * Commit: ad1907fe73334d6c696c8539646c21b11178f20f
  * BoringSSL (LICENSE: ISC)
  */
-void memory_cleanse(void *ptr, size_t len)
-{
+void memory_cleanse(void *ptr, size_t len) {
     std::memset(ptr, 0, len);
 
     /* As best as we can tell, this is sufficient to break any optimisations that
