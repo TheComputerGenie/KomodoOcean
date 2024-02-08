@@ -8,8 +8,7 @@ void TestLibsodiumEd25519SignatureVerification(
     const std::string &scope,
     const std::string &msg,
     std::vector<unsigned char> pubkey,
-    std::vector<unsigned char> sig)
-{
+    std::vector<unsigned char> sig) {
     SCOPED_TRACE(scope);
 
     EXPECT_EQ(

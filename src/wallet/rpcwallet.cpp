@@ -233,30 +233,32 @@ UniValue gen64addrs(const UniValue& params, bool fHelp, const CPubKey& mypk) {
             + HelpExampleCli("gen64addrs", "")
             + HelpExampleRpc("gen64addrs", "")
         );
-  int32_t i, segid; uint64_t mask = 0; uint8_t priv32[32];
-  UniValue results(UniValue::VARR);
-  for (i = 0; bitweight(mask) < 64; i++) {
+    int32_t i, segid;
+    uint64_t mask = 0;
+    uint8_t priv32[32];
+    UniValue results(UniValue::VARR);
+    for (i = 0; bitweight(mask) < 64; i++) {
 #ifndef __WIN32
-    OS_randombytes(priv32, sizeof(priv32));
+        OS_randombytes(priv32, sizeof(priv32));
 #else
-    randombytes_buf(priv32, sizeof(priv32));
+        randombytes_buf(priv32, sizeof(priv32));
 #endif
-    CKey key;
-    key.Set(&priv32[0], &priv32[32], true);
-    CPubKey pubkey = key.GetPubKey();
-    CKeyID vchAddress = pubkey.GetID();
-    segid = (int)komodo_segid32((char*)EncodeDestination(vchAddress).c_str()) & 0x3f;
-    if ((mask & (1LL << segid)) == 0) {
-      mask |= (1LL << segid);
-      UniValue entry(UniValue::VOBJ);
-      entry.push_back(Pair("segid", segid ));
-      entry.push_back(Pair("address", EncodeDestination(vchAddress).c_str() ));
-      entry.push_back(Pair("WIF", EncodeSecret(key).c_str() ));
-      entry.push_back(Pair("pubkey", HexStr(pubkey).c_str() ));
-      results.push_back(entry);
+        CKey key;
+        key.Set(&priv32[0], &priv32[32], true);
+        CPubKey pubkey = key.GetPubKey();
+        CKeyID vchAddress = pubkey.GetID();
+        segid = (int)komodo_segid32((char*)EncodeDestination(vchAddress).c_str()) & 0x3f;
+        if ((mask & (1LL << segid)) == 0) {
+            mask |= (1LL << segid);
+            UniValue entry(UniValue::VOBJ);
+            entry.push_back(Pair("segid", segid ));
+            entry.push_back(Pair("address", EncodeDestination(vchAddress).c_str() ));
+            entry.push_back(Pair("WIF", EncodeSecret(key).c_str() ));
+            entry.push_back(Pair("pubkey", HexStr(pubkey).c_str() ));
+            results.push_back(entry);
+        }
     }
-  }
-  return results;
+    return results;
 }
 
 CTxDestination GetAccountAddress(std::string strAccount, bool bForceNew=false) {
