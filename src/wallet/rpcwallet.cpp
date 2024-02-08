@@ -213,6 +213,51 @@ UniValue getnewaddress(const UniValue& params, bool fHelp, const CPubKey& mypk) 
     return EncodeDestination(keyID);
 }
 
+UniValue gen64addrs(const UniValue& params, bool fHelp, const CPubKey& mypk) {
+    if (fHelp || params.size() > 1)
+        throw runtime_error(
+            "gen64addrs\n"
+            "\nReturns a JSON array of 64 new " + chainName.ToString() + " addresses and WIFs for staking on all segments.\n"
+            "	These addresses are NOT automatically imported into the wallet.\n"
+            "\nResult:\n"
+            "[                   (array of json objects)\n"
+            "{\n"
+            "  \"segid\": xx,		(numeric) the segid for the given address\n"
+            "  \"address\": \"xxxxx\"	(string) the " + chainName.ToString() + " address\n"
+            "  \"WIF\": \"xxxxx\"	(string) the WIF to import the address\n"
+            "  \"pubkey\": \"xxxxx\"	(string) the public key of the address\n"
+            "}\n"
+            "  ,...\n"
+            "]\n"
+            "\nExamples:\n"
+            + HelpExampleCli("gen64addrs", "")
+            + HelpExampleRpc("gen64addrs", "")
+        );
+  int32_t i, segid; uint64_t mask = 0; uint8_t priv32[32];
+  UniValue results(UniValue::VARR);
+  for (i = 0; bitweight(mask) < 64; i++) {
+#ifndef __WIN32
+    OS_randombytes(priv32, sizeof(priv32));
+#else
+    randombytes_buf(priv32, sizeof(priv32));
+#endif
+    CKey key;
+    key.Set(&priv32[0], &priv32[32], true);
+    CPubKey pubkey = key.GetPubKey();
+    CKeyID vchAddress = pubkey.GetID();
+    segid = (int)komodo_segid32((char*)EncodeDestination(vchAddress).c_str()) & 0x3f;
+    if ((mask & (1LL << segid)) == 0) {
+      mask |= (1LL << segid);
+      UniValue entry(UniValue::VOBJ);
+      entry.push_back(Pair("segid", segid ));
+      entry.push_back(Pair("address", EncodeDestination(vchAddress).c_str() ));
+      entry.push_back(Pair("WIF", EncodeSecret(key).c_str() ));
+      entry.push_back(Pair("pubkey", HexStr(pubkey).c_str() ));
+      results.push_back(entry);
+    }
+  }
+  return results;
+}
 
 CTxDestination GetAccountAddress(std::string strAccount, bool bForceNew=false) {
     CWalletDB walletdb(pwalletMain->strWalletFile);
@@ -7641,6 +7686,7 @@ static const CRPCCommand commands[] = {
     { "wallet",             "getaddressesbyaccount",    &getaddressesbyaccount,    true  },
     { "wallet",             "getbalance",               &getbalance,               false },
     { "wallet",             "getnewaddress",            &getnewaddress,            true  },
+    { "wallet",             "gen64addrs",               &gen64addrs,               true  },
     { "wallet",             "getrawchangeaddress",      &getrawchangeaddress,      true  },
     { "wallet",             "getreceivedbyaccount",     &getreceivedbyaccount,     false },
     { "wallet",             "getreceivedbyaddress",     &getreceivedbyaddress,     false },
