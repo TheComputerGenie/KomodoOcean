@@ -80,11 +80,7 @@
             <property name="font">
              <font>
               <weight>75</weight>
-              <bold>true</bold>
              </font>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">font-weight:bold;</string>
             </property>
             <property name="text">
              <string>Coin Control Features</string>
@@ -103,9 +99,6 @@
           </property>
           <item>
            <widget class="QPushButton" name="pushButtonCoinControl">
-            <property name="styleSheet">
-             <string notr="true"/>
-            </property>
             <property name="text">
              <string>Inputs...</string>
             </property>
@@ -129,17 +122,10 @@
             <property name="font">
              <font>
               <weight>75</weight>
-              <bold>true</bold>
              </font>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">color:red;font-weight:bold;</string>
             </property>
             <property name="text">
              <string>Insufficient funds!</string>
-            </property>
-            <property name="margin">
-             <number>5</number>
             </property>
            </widget>
           </item>
@@ -171,9 +157,6 @@
             <width>0</width>
             <height>0</height>
            </size>
-          </property>
-          <property name="styleSheet">
-           <string notr="true"/>
           </property>
           <layout class="QHBoxLayout" name="horizontalLayoutCoinControl5">
            <property name="leftMargin">
@@ -717,11 +700,7 @@
                 <property name="font">
                  <font>
                   <weight>75</weight>
-                  <bold>true</bold>
                  </font>
-                </property>
-                <property name="styleSheet">
-                 <string notr="true">font-weight:bold;</string>
                 </property>
                 <property name="text">
                  <string>Transaction Fee:</string>

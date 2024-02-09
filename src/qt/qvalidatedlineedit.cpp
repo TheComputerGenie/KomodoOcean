@@ -18,12 +18,6 @@ void QValidatedLineEdit::setValid(bool _valid) {
     if(_valid == this->valid) {
         return;
     }
-
-    if(_valid) {
-        setStyleSheet("");
-    } else {
-        setStyleSheet(STYLE_INVALID);
-    }
     this->valid = _valid;
 }
 

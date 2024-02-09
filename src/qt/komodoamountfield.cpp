@@ -219,10 +219,17 @@ bool KomodoAmountField::validate() {
 }
 
 void KomodoAmountField::setValid(bool valid) {
-    if (valid)
-        amount->setStyleSheet("");
-    else
-        amount->setStyleSheet(STYLE_INVALID);
+    if (valid) {
+        amount->setProperty("valid", true);
+        amount->style()->unpolish(amount);
+        amount->style()->polish(amount);
+        amount->update();
+    } else {
+        amount->setProperty("valid", false);
+        amount->style()->unpolish(amount);
+        amount->style()->polish(amount);
+        amount->update();
+    }
 }
 
 bool KomodoAmountField::eventFilter(QObject *object, QEvent *event) {

@@ -233,7 +233,7 @@ void OptionsDialog::on_hideTrayIcon_stateChanged(int fState) {
 }
 
 void OptionsDialog::showRestartWarning(bool fPersistent) {
-    ui->statusLabel->setStyleSheet("QLabel { color: red; }");
+    ui->statusLabel->setProperty("urgent", true);
 
     if(fPersistent) {
         ui->statusLabel->setText(tr("Client restart required to activate changes."));
@@ -260,7 +260,7 @@ void OptionsDialog::updateProxyValidationState() {
         clearStatusLabel();
     } else {
         setOkButtonState(false);
-        ui->statusLabel->setStyleSheet("QLabel { color: red; }");
+        ui->statusLabel->setProperty("urgent", true);
         ui->statusLabel->setText(tr("The supplied proxy address is invalid."));
     }
 }

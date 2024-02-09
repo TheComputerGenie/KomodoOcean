@@ -86,9 +86,6 @@
               <bold>true</bold>
              </font>
             </property>
-            <property name="styleSheet">
-             <string notr="true">font-weight:bold;</string>
-            </property>
             <property name="text">
              <string>Pay From:</string>
             </property>
@@ -274,11 +271,7 @@
                 <property name="font">
                  <font>
                   <weight>75</weight>
-                  <bold>true</bold>
                  </font>
-                </property>
-                <property name="styleSheet">
-                 <string notr="true">font-weight:bold;</string>
                 </property>
                 <property name="text">
                  <string>Transaction Fee:</string>
@@ -417,11 +410,7 @@
                 <property name="font">
                  <font>
                   <weight>75</weight>
-                  <bold>true</bold>
                  </font>
-                </property>
-                <property name="styleSheet">
-                 <string notr="true">font-weight:bold;</string>
                 </property>
                 <property name="text">
                  <string>Operation ID:</string>

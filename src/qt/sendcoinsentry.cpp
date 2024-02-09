@@ -130,7 +130,10 @@ bool SendCoinsEntry::validate(bool allowZAddresses) {
 
     // Check input validity
     bool retval = true;
-
+    ui->payTo->setProperty("valid", retval);
+    ui->payTo->style()->unpolish(ui->payTo);
+    ui->payTo->style()->polish(ui->payTo);
+    ui->payTo->update();
 #ifdef ENABLE_BIP70
     // Skip checks for payment request
     if (recipient.paymentRequest.IsInitialized())
@@ -140,6 +143,10 @@ bool SendCoinsEntry::validate(bool allowZAddresses) {
     if (!model->validateAddress(ui->payTo->text(), allowZAddresses)) {
         ui->payTo->setValid(false);
         retval = false;
+        ui->payTo->setProperty("valid", retval);
+        ui->payTo->style()->unpolish(ui->payTo);
+        ui->payTo->style()->polish(ui->payTo);
+        ui->payTo->update();
     }
 
     if (!ui->payAmount->validate()) {
@@ -159,7 +166,6 @@ bool SendCoinsEntry::validate(bool allowZAddresses) {
             retval = false;
         }
     }
-
     return retval;
 }
 

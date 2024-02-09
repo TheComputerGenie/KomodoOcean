@@ -649,9 +649,7 @@ void SendCoinsDialog::updateSmartFeeLabel() {
         ui->labelSmartFee2->show(); // (Smart fee not initialized yet. This usually takes a few blocks...)
         ui->labelFeeEstimation->setText("");
         ui->fallbackFeeWarningLabel->setVisible(true);
-        int lightness = ui->fallbackFeeWarningLabel->palette().color(QPalette::WindowText).lightness();
-        QColor warning_colour(255 - (lightness / 5), 176 - (lightness / 3), 48 - (lightness / 14));
-        ui->fallbackFeeWarningLabel->setStyleSheet("QLabel { color: " + warning_colour.name() + "; }");
+        ui->fallbackFeeWarningLabel->setProperty("waiting", true);
         ui->fallbackFeeWarningLabel->setIndent(GUIUtil::TextWidth(QFontMetrics(ui->fallbackFeeWarningLabel->font()), "x"));
     } else {
         ui->labelSmartFee2->hide();
@@ -732,10 +730,8 @@ void SendCoinsDialog::coinControlChangeEdited(const QString& text) {
     if (model && model->getAddressTableModel()) {
         // Default to no change address until verified
         CoinControlDialog::coinControl->destChange = CNoDestination();
-        ui->labelCoinControlChangeLabel->setStyleSheet("QLabel{color:red;}");
-
+        ui->labelCoinControlChangeLabel->setProperty("urgent", true);
         const CTxDestination dest = DecodeDestination(text.toStdString());
-
         if (text.isEmpty()) { // Nothing entered
             ui->labelCoinControlChangeLabel->setText("");
         } else if (!IsValidDestination(dest)) { // Invalid address
@@ -752,12 +748,11 @@ void SendCoinsDialog::coinControlChangeEdited(const QString& text) {
                     CoinControlDialog::coinControl->destChange = dest;
                 else {
                     ui->lineEditCoinControlChange->setText("");
-                    ui->labelCoinControlChangeLabel->setStyleSheet("QLabel{color:black;}");
+                    ui->labelCoinControlChangeLabel->setProperty("urgent", false);
                     ui->labelCoinControlChangeLabel->setText("");
                 }
             } else { // Known change address
-                ui->labelCoinControlChangeLabel->setStyleSheet("QLabel{color:black;}");
-
+                ui->labelCoinControlChangeLabel->setProperty("urgent", false);
                 // Query label
                 QString associatedLabel = model->getAddressTableModel()->labelForAddress(text);
                 if (!associatedLabel.isEmpty())
@@ -768,7 +763,10 @@ void SendCoinsDialog::coinControlChangeEdited(const QString& text) {
                 CoinControlDialog::coinControl->destChange = dest;
             }
         }
+        ui->lineEditCoinControlChange->setProperty("valid", IsValidDestination(dest));
     }
+    ui->lineEditCoinControlChange->style()->unpolish(ui->lineEditCoinControlChange);
+    ui->lineEditCoinControlChange->style()->polish(ui->lineEditCoinControlChange);
 }
 
 // Coin Control: update labels

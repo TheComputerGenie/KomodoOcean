@@ -165,3 +165,5 @@ src/cryptoconditions/src/stamp-h1
 configure.ac.patch
 
 src/gui/komodoku/
+
+launchTest.sh

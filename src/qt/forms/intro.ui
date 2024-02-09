@@ -16,9 +16,6 @@
   <layout class="QVBoxLayout" name="verticalLayout">
    <item>
     <widget class="QLabel" name="welcomeLabel">
-     <property name="styleSheet">
-      <string notr="true">QLabel { font-style:italic; }</string>
-     </property>
      <property name="text">
       <string>Welcome to %1.</string>
      </property>

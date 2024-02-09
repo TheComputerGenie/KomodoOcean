@@ -1,18 +1,72 @@
 /* no need to hard code stylesheets and bury them */
-QStatusBar QLabel {
-    color: black;
-}
+QStatusBar QLabel { color: black; }
 
+/* The whole bar - both the status and overlay (since generic global) */
+/* Yes, this was intended to only match specific styles; however, it needs to be here for obvious reasons */
 QProgressBar { 
-	background-color: #e8e8e8;
+	background-color: gainsboro;
 	border: 1px solid grey;
 	border-radius: 7px;
 	padding: 1px;
 	text-align: center;
 }
-
+/* incremental part */
 QProgressBar::chunk {
-	background: QLinearGradient(x1: 0, y1: 0, x2: 1, y2: 0, stop: 0 #FF8000, stop: 1 orange);
+	background: QLinearGradient(x1: 0, y1: 0, x2: 1, y2: 0, stop: 0 chocolate, stop: 1 orange);
 	border-radius: 7px;
 	margin: 0px;
 }
+/* Payments */
+/* note: currently payTo is NOT validated on entry like lineEditCoinControlChange(change address) is
+            presumably to decrease checks if multiple payees to just when send button clicked        */
+AmountSpinBox, QValidatedLineEdit { color: black; }
+AmountSpinBox[valid="true"], QValidatedLineEdit[valid="true"] { background-color: white; }
+AmountSpinBox[valid="false"], QValidatedLineEdit[valid="false"] { background-color: lightcoral; }
+
+/* helps limit popup items - numbers represent states and not numerical digits */
+QComboBox { combobox-popup: 0; }
+
+/* Error status based on setProperty */
+QLabel[urgent=true] { color: red; }
+QLabel[urgent=false] { color: black; }
+QLabel[waiting=true] { color: tomato; }
+QLabel[passing=true] { color: green; }
+
+/* this isn't pulled, but here as a reminder from when taking care of html */
+#messagesWidget { background-color: white; }
+
+/* ModalOverlay */
+/* outer "border" */
+#bgWidget { background: rgba(0,0,0,220); }
+/* words */
+#contentWidget QLabel { color: rgb(40,40,40);  }
+/* center "pane" */
+#contentWidget {
+    background: rgba(255,255,255,240);
+    border-radius: 6px;
+}
+
+/* Overview page */
+/* release notice */
+#labelAlerts { 
+    background-color: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 0, stop:0 #F0D0A0, stop:1 #F8D488);
+    color: #000000;
+    qproperty-wordWrap: true;
+    margin: 3;
+}
+/* tx history list */
+#listTransactions { background: transparent; }
+
+/* SendCoinsDialog (both t and z, since they have same item names) */
+/* these could be separated out by calling out dialog by name */
+/* eg:
+ZSendCoinsDialog #labelCoinControlFeatures { color: blue; }
+*/
+#labelCoinControlFeatures, #labelFeeHeadline, #labelCoinControlInsuffFunds { font-weight: bold; }
+#labelCoinControlInsuffFunds {
+    color: red;
+    margin: 5;
+}
+
+/* 1st run */
+#welcomeLabel { font-style:italic; }

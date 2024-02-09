@@ -507,7 +507,11 @@ void CoinControlDialog::updateLabels(WalletModel *model, QDialog* dialog) {
     }
 
     // turn label red when dust
-    l7->setStyleSheet((fDust) ? "color:red;" : "");
+    if (fDust) {
+        l7->setProperty("urgent", true);
+    } else {
+        l7->setProperty("urgent", false);
+    }
 
     // tool tips
     QString toolTipDust = tr("This label turns red if any recipient receives an amount smaller than the current dust threshold.");
