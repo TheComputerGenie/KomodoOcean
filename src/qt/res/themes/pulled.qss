@@ -29,8 +29,11 @@ QComboBox { combobox-popup: 0; }
 /* Error status based on setProperty */
 QLabel[urgent=true] { color: red; }
 QLabel[urgent=false] { color: black; }
-QLabel[waiting=true] { color: tomato; }
 QLabel[passing=true] { color: green; }
+QLabel[waiting=true] {
+    color: tomato;
+    font-weight: bold;
+}
 
 /* this isn't pulled, but here as a reminder from when taking care of html */
 #messagesWidget { background-color: white; }

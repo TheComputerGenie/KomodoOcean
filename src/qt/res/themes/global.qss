@@ -21,3 +21,8 @@ QMenu::item:selected{
     background-color: darkgreen;
     color: white;
 }
+/* this is just lazy; but, lazy is as lazy does */
+QLabel#label, QLabel#label_2, QLabel#label_3, QLabel#label_4, QLabel#label_5, QLabel#label_6, QLabel#label_7 {
+    color: black;
+    font-weight: bold;
+}

@@ -212,9 +212,10 @@ KomodoOceanGUI::KomodoOceanGUI(const PlatformStyle *_platformStyle, const Networ
         usedSendingAddressesAction->setVisible(true);
         usedReceivingAddressesAction->setVisible(true);
     }
-    std::string StyleSheetNames[2] = { "global", "pulled" };
+    std::string StyleSheetNames[3] = { "global", "pulled", "overview" };
+    int StyleSheetCount = sizeof(StyleSheetNames) / sizeof(StyleSheetNames[0]);
     QString ThisStyleSheet;
-    for (int i = 0; i < 2; i++) {
+    for (int i = 0; i < StyleSheetCount; i++) {
         QFile styleFile;
         styleFile.setFileName (":/themes/" + QString::fromStdString(StyleSheetNames[i]));
         styleFile.open(QFile::ReadOnly);
