@@ -48,9 +48,13 @@ packages := boost openssl libevent zeromq $(zcash_packages) googletest libcurl #
 rust_packages := rust $(rust_crates) librustzcash
 
 native_packages := native_ccache
+$(host_arch)_$(host_os)_native_packages += native_b2
 
 wallet_packages := bdb
-
+# We use a complete SDK for Darwin, which includes libc++.
+ifneq ($(host_os),darwin)
+packages += libcxx
+endif
 ifneq ($(build_os),darwin)
 	darwin_native_packages += native_cctools native_libtapi native_cdrkit
 	ifeq ($(strip $(FORCE_USE_SYSTEM_CLANG)),)

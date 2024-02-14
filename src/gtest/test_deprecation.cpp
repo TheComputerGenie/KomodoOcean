@@ -35,7 +35,7 @@ class DeprecationTest : public ::testing::Test {
   protected:
     virtual void SetUp() {
         uiInterface.ThreadSafeMessageBox.disconnect_all_slots();
-        uiInterface.ThreadSafeMessageBox.connect(boost::bind(ThreadSafeMessageBox, &mock_, _1, _2, _3));
+        uiInterface.ThreadSafeMessageBox.connect(boost::bind(ThreadSafeMessageBox, &mock_, std::placeholders::_1, std::placeholders::_2, std::placeholders::_3));
         SelectParams(CBaseChainParams::MAIN);
 
     }
