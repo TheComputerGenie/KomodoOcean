@@ -1186,15 +1186,7 @@ void static BitcoinMiner()
             CBlock *pblock = &pblocktemplate->block;
             if ( !chainName.isKMD() ) {
                 if ( ASSETCHAINS_REWARD[0] == 0 && !ASSETCHAINS_LASTERA ) {
-                    if ( pblock->vtx.size() == 1 && pblock->vtx[0].vout.size() == 1 && Mining_height > ASSETCHAINS_MINHEIGHT ) {
-                        static uint32_t counter;
-                        if ( counter++ < 10 )
-                            LogPrintf("skip generating %s on-demand block, no tx avail\n",chainName.symbol().c_str());
-                        //sleep(10);
-                        boost::this_thread::sleep_for(boost::chrono::seconds(10)); // allow to interrupt
-
-                        continue;
-                    } else LogPrintf("%s vouts.%d mining.%d vs %d\n",chainName.symbol().c_str(),(int32_t)pblock->vtx[0].vout.size(),Mining_height,ASSETCHAINS_MINHEIGHT);
+                    LogPrintf("%s vouts.%d mining.%d vs %d\n",chainName.symbol().c_str(),(int32_t)pblock->vtx[0].vout.size(),Mining_height,ASSETCHAINS_MINHEIGHT);
                 }
             }
             // We cant increment nonce for proof transactions, as it modifes the coinbase, meaning CreateBlock must be called again to get a new valid proof to pass validation.
