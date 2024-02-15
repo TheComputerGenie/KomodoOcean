@@ -1105,8 +1105,13 @@ void static BitcoinMiner()
     miningTimer.start();
 
     try {
-        if ( !chainName.isKMD() )
+        if ( !chainName.isKMD() ) {
             LogPrintf("try %s Mining with %s\n",chainName.symbol().c_str(),solver.c_str());
+        }
+        unique_ptr<equi> peq;
+        if (solver == "tromp") {
+            peq.reset(new equi(1));
+        }
         while (true) {
             if (chainparams.MiningRequiresPeers()) {
                 // Busy-wait for the network to come online so we don't waste time mining
@@ -1435,17 +1440,17 @@ void static BitcoinMiner()
                 };
                 // TODO: factor this out into a function with the same API for each solver.
                 if (solver == "tromp" ) { //&& notaryid >= 0 ) {
-                    // Create solver and initialize it.
-                    equi eq(1);
+                    equi& eq = *peq;
+                    // initialize solver
                     eq.setstate(&curr_state);
 
                     // Initialization done, start algo driver.
                     eq.digit0(0);
-                    eq.xfull = eq.bfull = eq.hfull = 0;
+                    eq.bfull = eq.hfull = 0;
                     eq.showbsizes(0);
                     for (u32 r = 1; r < WK; r++) {
                         (r&1) ? eq.digitodd(r, 0) : eq.digiteven(r, 0);
-                        eq.xfull = eq.bfull = eq.hfull = 0;
+                        eq.bfull = eq.hfull = 0;
                         eq.showbsizes(r);
                     }
                     eq.digitK(0);
@@ -1608,11 +1613,11 @@ bool test_tromp_equihash() {
 
     // Initialization done, start algo driver.
     eq.digit0(0);
-    eq.xfull = eq.bfull = eq.hfull = 0;
+    eq.bfull = eq.hfull = 0;
     eq.showbsizes(0);
     for (u32 r = 1; r < WK; r++) {
         (r&1) ? eq.digitodd(r, 0) : eq.digiteven(r, 0);
-        eq.xfull = eq.bfull = eq.hfull = 0;
+        eq.bfull = eq.hfull = 0;
         eq.showbsizes(r);
     }
     eq.digitK(0);

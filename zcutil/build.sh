@@ -108,6 +108,6 @@ HOST="$HOST" BUILD="$BUILD" "$MAKE" -C ./depends/ V=1 ${QT_D_ARG} -j20
 ./autogen.sh
 
 #configure: WARNING: you should use --build, --host, --target
-./configure --prefix="${PREFIX}" "$QT_C_ARG" --disable-bip70 --enable-tests=no --enable-wallet=yes "$HARDENING_ARG" "$LCOV_ARG" "$TEST_ARG" "$MINING_ARG" "$PROTON_ARG" $CONFIGURE_FLAGS CXXFLAGS='-g0 -O2'
+./configure --prefix="${PREFIX}" "$QT_C_ARG" --disable-bip70 --enable-tests=no --enable-tromp-avx2=yes --enable-wallet=yes "$HARDENING_ARG" "$LCOV_ARG" "$TEST_ARG" "$MINING_ARG" "$PROTON_ARG" $CONFIGURE_FLAGS CXXFLAGS='-g0 -O2'
 
 "$MAKE" V=1 -j20
