@@ -13,7 +13,7 @@
 #include "ui_interface.h"
 #include "utilstrencodings.h"
 
-#include <stdio.h>
+#include <cstdio>
 #include <stdlib.h>
 #include <string.h>
 

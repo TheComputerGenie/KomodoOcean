@@ -26,12 +26,13 @@
 
 #include <algorithm>
 #include <assert.h>
+#include <cstdio>
 #include <ios>
 #include <limits>
 #include <map>
 #include <set>
 #include <stdint.h>
-#include <stdio.h>
+#include <cstdio>
 #include <string>
 #include <string.h>
 #include <utility>
