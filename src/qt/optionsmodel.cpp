@@ -73,14 +73,16 @@ void OptionsModel::Init(bool resetSettings) {
         settings.setValue("nDisplayUnit", KomodoUnits::KMD);
     nDisplayUnit = settings.value("nDisplayUnit").toInt();
 
-    std::string defaultStrThirdPartyTxUrls = "https://kmdexplorer.io/tx/%s|https://kmd.explorer.dexstats.info/tx/%s";
+    std::string defaultStrThirdPartyTxUrls;
     std::string strAssetchainName = std::string(chainName.symbol().c_str());
     std::transform(strAssetchainName.begin(), strAssetchainName.end(), strAssetchainName.begin(), [](unsigned char c) {
         return std::tolower(c);
     });
-
+    //TODO: Add explorer persistent radio buttons, link buttons, set states
     if (!strAssetchainName.empty()) {
-        defaultStrThirdPartyTxUrls = "https://" + strAssetchainName + ".explorer.dexstats.info/tx/%s|" + defaultStrThirdPartyTxUrls;
+        defaultStrThirdPartyTxUrls = "https://" + strAssetchainName + ".explorer.dexstats.info/tx/%s";
+    } else {
+        defaultStrThirdPartyTxUrls = "https://kmd.explorer.dexstats.info/tx/%s";
     }
 
     if (!settings.contains("strThirdPartyTxUrls"))
