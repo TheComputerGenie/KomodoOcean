@@ -34,8 +34,9 @@ SplashScreen::SplashScreen(const NetworkStyle *networkStyle) :
     int titleVersionVSpace      = 17;
     int titleCopyrightVSpace    = 40;
 
-    float fontFactor            = 1.0;
+    float fontFactor            = 1.1;
     float devicePixelRatio      = 1.0;
+    float SizeChange            = 0.95;
 
     devicePixelRatio = ((QGuiApplication*)QCoreApplication::instance())->devicePixelRatio();
     // define text to place
@@ -62,13 +63,13 @@ SplashScreen::SplashScreen(const NetworkStyle *networkStyle) :
     QRect rGradient(QPoint(0,0), splashSize);
     pixPaint.fillRect(rGradient, gradient);
 
-    // draw the komodo icon, expected size of PNG: 1024x1024
-    // QRect rectIcon(QPoint(-150,-122), QSize(430,430));
-    // QRect rectIcon(QPoint(-50,-10), QSize(350,350));
-    QRect rectIcon(QPoint(5,15), QSize(280,280));
-
-    const QSize requiredSize(1024,1024);
+    // draw the komodo icon
+    // actual size of PNG: 280x280
+    // print size: SizeChange % of actual
+    const QSize requiredSize((280 * SizeChange),(280 * SizeChange));
     QPixmap icon(networkStyle->getAppIcon().pixmap(requiredSize));
+    // position and size the komodo icon
+    QRect rectIcon(QPoint(10,10), requiredSize);
 
     pixPaint.drawPixmap(rectIcon, icon);
 
