@@ -18,12 +18,12 @@
  *                                                                            *
  ******************************************************************************/
 
-#include "merkleblock.h"
+#include <merkleblock.h>
 
-#include "hash.h"
-#include "consensus/consensus.h"
-#include "utilstrencodings.h"
-#include "komodo_defs.h"
+#include <hash.h>
+#include <consensus/consensus.h>
+#include <utilstrencodings.h>
+#include <komodo_defs.h>
 using namespace std;
 
 CMerkleBlock::CMerkleBlock(const CBlock& block, CBloomFilter& filter) {

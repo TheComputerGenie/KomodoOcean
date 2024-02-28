@@ -22,27 +22,27 @@
 #define BITCOIN_MAIN_H
 
 #if defined(HAVE_CONFIG_H)
-#include "config/bitcoin-config.h"
+#include <config/bitcoin-config.h>
 #endif
 
-#include "amount.h"
-#include "chain.h"
-#include "chainparams.h"
-#include "coins.h"
-#include "consensus/consensus.h"
-#include "consensus/upgrades.h"
-#include "net.h"
-#include "primitives/block.h"
-#include "primitives/transaction.h"
-#include "script/script.h"
-#include "script/serverchecker.h"
-#include "script/standard.h"
-#include "script/script_ext.h"
-#include "spentindex.h"
-#include "sync.h"
-#include "tinyformat.h"
-#include "txmempool.h"
-#include "uint256.h"
+#include <amount.h>
+#include <chain.h>
+#include <chainparams.h>
+#include <coins.h>
+#include <consensus/consensus.h>
+#include <consensus/upgrades.h>
+#include <net.h>
+#include <primitives/block.h>
+#include <primitives/transaction.h>
+#include <script/script.h>
+#include <script/serverchecker.h>
+#include <script/standard.h>
+#include <script/script_ext.h>
+#include <spentindex.h>
+#include <sync.h>
+#include <tinyformat.h>
+#include <txmempool.h>
+#include <uint256.h>
 
 #include <algorithm>
 #include <exception>

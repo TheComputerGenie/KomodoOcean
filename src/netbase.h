@@ -21,12 +21,12 @@
 #define BITCOIN_NETBASE_H
 
 #if defined(HAVE_CONFIG_H)
-#include "config/bitcoin-config.h"
+#include <config/bitcoin-config.h>
 #endif
 
-#include "compat.h"
-#include "serialize.h"
-#include "util/asmap.h"
+#include <compat.h>
+#include <serialize.h>
+#include <util/asmap.h>
 
 #include <stdint.h>
 #include <string>

@@ -1,10 +1,10 @@
-#include "dbwrapper.h"
-#include "notarisationdb.h"
-#include "uint256.h"
-#include "cc/eval.h"
-#include "crosschain.h"
-#include "main.h"
-#include "notaries_staked.h"
+#include <dbwrapper.h>
+#include <notarisationdb.h>
+#include <uint256.h>
+#include <cc/eval.h>
+#include <crosschain.h>
+#include <main.h>
+#include <notaries_staked.h>
 
 #include <boost/foreach.hpp>
 

@@ -17,16 +17,16 @@
  *                                                                            *
  ******************************************************************************/
 
-#include "rpc/server.h"
-#include "init.h"
-#include "key_io.h"
-#include "main.h"
-#include "script/script.h"
-#include "script/standard.h"
-#include "sync.h"
-#include "util.h"
-#include "utiltime.h"
-#include "wallet.h"
+#include <rpc/server.h>
+#include <init.h>
+#include <key_io.h>
+#include <main.h>
+#include <script/script.h>
+#include <script/standard.h>
+#include <sync.h>
+#include <util.h>
+#include <utiltime.h>
+#include <wallet/wallet.h>
 
 #include <fstream>
 #include <stdint.h>
@@ -36,11 +36,11 @@
 
 #include <univalue.h>
 
-#include "paymentdisclosure.h"
-#include "paymentdisclosuredb.h"
+#include <paymentdisclosure.h>
+#include <paymentdisclosuredb.h>
 
-#include "zcash/Note.hpp"
-#include "zcash/NoteEncryption.hpp"
+#include <zcash/Note.hpp>
+#include <zcash/NoteEncryption.hpp>
 
 using namespace std;
 using namespace libzcash;

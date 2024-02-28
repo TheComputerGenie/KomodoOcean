@@ -14,7 +14,7 @@
  ******************************************************************************/
 #pragma once
 
-#include "uint256.h"
+#include <uint256.h>
 
 uint256 BuildMerkleTree(bool* fMutated, const std::vector<uint256> leaves, std::vector<uint256> &vMerkleTree);
 uint256 ComputeMerkleRoot(std::vector<uint256> hashes, bool* mutated );

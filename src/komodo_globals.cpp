@@ -12,10 +12,10 @@
  * Removal or modification of this copyright notice is prohibited.            *
  *                                                                            *
  ******************************************************************************/
-#include "komodo_defs.h"
-#include "komodo_globals.h"
-#include "komodo_extern_globals.h"
-#include "komodo_notary.h"
+#include <komodo_defs.h>
+#include <komodo_globals.h>
+#include <komodo_extern_globals.h>
+#include <komodo_notary.h>
 
 // global komodo vars definitions
 std::mutex komodo_mutex;

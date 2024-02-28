@@ -12,20 +12,20 @@
  * Removal or modification of this copyright notice is prohibited.            *
  *                                                                            *
  ******************************************************************************/
-#include "komodo.h"
-#include "komodo_globals.h"
-#include "komodo_extern_globals.h"
-#include "komodo_utils.h"
-#include "komodo_notary.h"
-#include "komodo_bitcoind.h"
-#include "mem_read.h"
-#include "notaries_staked.h"
+#include <komodo.h>
+#include <komodo_globals.h>
+#include <komodo_extern_globals.h>
+#include <komodo_utils.h>
+#include <komodo_notary.h>
+#include <komodo_bitcoind.h>
+#include <mem_read.h>
+#include <notaries_staked.h>
 
 static FILE *fp; // for stateupdate
 //int32_t KOMODO_EXTERNAL_NOTARIES = 0; //todo remove
-#include "komodo_gateway.h"
-#include "komodo_events.h"
-#include "komodo_ccdata.h"
+#include <komodo_gateway.h>
+#include <komodo_events.h>
+#include <komodo_ccdata.h>
 
 void komodo_currentheight_set(int32_t height) {
     char symbol[KOMODO_ASSETCHAIN_MAXLEN],dest[KOMODO_ASSETCHAIN_MAXLEN];

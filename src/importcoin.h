@@ -13,10 +13,10 @@
  * Removal or modification of this copyright notice is prohibited.            *
  *                                                                            *
  ******************************************************************************/
-#include "cc/eval.h"
-#include "coins.h"
-#include "primitives/transaction.h"
-#include "script/interpreter.h"
+#include <cc/eval.h>
+#include <coins.h>
+#include <primitives/transaction.h>
+#include <script/interpreter.h>
 #include <cryptoconditions.h>
 
 enum ProofKind : uint8_t {

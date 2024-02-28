@@ -18,12 +18,12 @@
  *                                                                            *
  ******************************************************************************/
 
-#include "sigcache.h"
+#include <script/sigcache.h>
 
-#include "pubkey.h"
-#include "random.h"
-#include "uint256.h"
-#include "util.h"
+#include <pubkey.h>
+#include <random.h>
+#include <uint256.h>
+#include <util.h>
 #ifdef _WIN32
 #undef __cpuid
 #endif

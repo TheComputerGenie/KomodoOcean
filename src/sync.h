@@ -21,7 +21,7 @@
 #ifndef BITCOIN_SYNC_H
 #define BITCOIN_SYNC_H
 
-#include "threadsafety.h"
+#include <threadsafety.h>
 
 #undef __cpuid
 #include <boost/thread/condition_variable.hpp>

@@ -5,7 +5,7 @@
 #ifndef KOMODO_QT_TRANSACTIONTABLEMODEL_H
 #define KOMODO_QT_TRANSACTIONTABLEMODEL_H
 
-#include "komodounits.h"
+#include <qt/komodounits.h>
 
 #include <QAbstractTableModel>
 #include <QStringList>

@@ -1,11 +1,11 @@
 
-#include "notaries_staked.h"
-#include "crosschain.h"
-#include "cc/CCinclude.h"
-#include "komodo_defs.h"
-#include "komodo_globals.h"
-#include "komodo_hardfork.h"
-#include "hex.h"
+#include <notaries_staked.h>
+#include <crosschain.h>
+#include <cc/CCinclude.h>
+#include <komodo_defs.h>
+#include <komodo_globals.h>
+#include <komodo_hardfork.h>
+#include <hex.h>
 #include <cstring>
 
 pthread_mutex_t staked_mutex; // todo remove

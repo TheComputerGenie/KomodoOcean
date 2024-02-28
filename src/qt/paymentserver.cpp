@@ -3,23 +3,23 @@
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #if defined(HAVE_CONFIG_H)
-#include "config/bitcoin-config.h"
+#include <config/bitcoin-config.h>
 #endif
 
-#include "paymentserver.h"
+#include <qt/paymentserver.h>
 
-#include "komodounits.h"
-#include "guiutil.h"
-#include "optionsmodel.h"
+#include <qt/komodounits.h>
+#include <qt/guiutil.h>
+#include <qt/optionsmodel.h>
 
-#include "base58.h"
-#include "chainparams.h"
-#include "policy/policy.h"
-#include "ui_interface.h"
-#include "util.h"
-#include "main.h"
-#include "wallet/wallet.h"
-#include "key_io.h"
+#include <base58.h>
+#include <chainparams.h>
+#include <policy/policy.h>
+#include <ui_interface.h>
+#include <util.h>
+#include <main.h>
+#include <wallet/wallet.h>
+#include <key_io.h>
 
 #include <cstdlib>
 

@@ -17,7 +17,7 @@
  * This file provides extern access to variables in komodo_globals.h
  * Please think twice before adding to this list. Can it be done with a better scope?
  */
-#include "komodo_defs.h"
+#include <komodo_defs.h>
 #include <mutex>
 #include <cstdint>
 

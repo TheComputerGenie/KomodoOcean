@@ -13,8 +13,8 @@
  *                                                                            *
  ******************************************************************************/
 #pragma once
-#include "uint256.h"
-#include "komodo_defs.h"
+#include <uint256.h>
+#include <komodo_defs.h>
 #include <cstdint>
 
 /***

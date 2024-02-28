@@ -18,16 +18,16 @@
  *                                                                            *
  ******************************************************************************/
 
-#include "chain.h"
-#include "komodo_defs.h"
-#include "komodo_globals.h"
-#include "notaries_staked.h"
-#include "komodo_hardfork.h"
+#include <chain.h>
+#include <komodo_defs.h>
+#include <komodo_globals.h>
+#include <notaries_staked.h>
+#include <komodo_hardfork.h>
 
 using namespace std;
 
-#include "main.h"
-#include "txdb.h"
+#include <main.h>
+#include <txdb.h>
 
 /**
  * CChain implementation

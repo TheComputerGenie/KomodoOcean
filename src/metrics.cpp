@@ -17,18 +17,18 @@
  *                                                                            *
  ******************************************************************************/
 
-#include "metrics.h"
+#include <metrics.h>
 
-#include "chainparams.h"
-#include "checkpoints.h"
-#include "main.h"
-#include "ui_interface.h"
-#include "util.h"
-#include "utiltime.h"
-#include "utilmoneystr.h"
-#include "utilstrencodings.h"
-#include "komodo_utils.h"
-#include "komodo_globals.h"
+#include <chainparams.h>
+#include <checkpoints.h>
+#include <main.h>
+#include <ui_interface.h>
+#include <util.h>
+#include <utiltime.h>
+#include <utilmoneystr.h>
+#include <utilstrencodings.h>
+#include <komodo_utils.h>
+#include <komodo_globals.h>
 
 #include <boost/thread.hpp>
 #include <boost/thread/synchronized_value.hpp>
@@ -41,7 +41,7 @@
 #endif
 #include <unistd.h>
 
-#include "komodo_defs.h"
+#include <komodo_defs.h>
 
 void AtomicTimer::start() {
     std::unique_lock<std::mutex> lock(mtx);

@@ -19,18 +19,18 @@
  ******************************************************************************/
 
 #ifdef HAVE_CONFIG_H
-#include "config/bitcoin-config.h"
+#include <config/bitcoin-config.h>
 #endif
 
-#include "netbase.h"
+#include <netbase.h>
 
-#include "hash.h"
-#include "sync.h"
-#include "uint256.h"
-#include "random.h"
-#include "util.h"
-#include "utilstrencodings.h"
-#include "crypto/common.h" // for ReadBE32
+#include <hash.h>
+#include <sync.h>
+#include <uint256.h>
+#include <random.h>
+#include <util.h>
+#include <utilstrencodings.h>
+#include <crypto/common.h> // for ReadBE32
 
 #ifdef __APPLE__
 #ifdef HAVE_GETADDRINFO_A

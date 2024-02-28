@@ -5,7 +5,7 @@
 #ifndef KOMODO_QT_TRANSACTIONFILTERPROXY_H
 #define KOMODO_QT_TRANSACTIONFILTERPROXY_H
 
-#include "amount.h"
+#include <amount.h>
 
 #include <QDateTime>
 #include <QSortFilterProxyModel>

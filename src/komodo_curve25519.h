@@ -22,10 +22,10 @@
 #include <stdint.h>
 #include <memory.h>
 #include <string.h>
-#include "bits256.h"
+#include <bits256.h>
 
-#include "uint256.h"
-//#include "komodo_structs.h" // komodo_structs.h -> komodo_defs.h -> arith_uint256.h -> class uint256;
+#include <uint256.h>
+
 
 #ifdef _WIN32
 #include <sodium.h>

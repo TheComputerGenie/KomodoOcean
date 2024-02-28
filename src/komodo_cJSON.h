@@ -44,8 +44,8 @@
 #include <float.h>
 #include <memory.h>
 
-#include "bits256.h"
-#include "cJSON.h"
+#include <bits256.h>
+#include <cJSON.h>
 
 #ifndef SATOSHIDEN
 #define SATOSHIDEN ((uint64_t)100000000L)
@@ -63,7 +63,7 @@ extern "C"
 {
 #endif
 
-//#include "komodo_cutils.h"
+
 
 /* Macros for creating things quickly. */
 #define cJSON_AddNullToObject(object,name)		cJSON_AddItemToObject(object, name, cJSON_CreateNull())

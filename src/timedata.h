@@ -8,8 +8,8 @@
 
 #include <set>
 #include <stdint.h>
-#include "netbase.h"
-#include "sync.h"
+#include <netbase.h>
+#include <sync.h>
 
 class CTimeWarning {
   private:

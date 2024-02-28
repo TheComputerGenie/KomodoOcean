@@ -18,32 +18,32 @@
  *                                                                            *
  ******************************************************************************/
 
-#include "wallet/wallet.h"
+#include <wallet/wallet.h>
 
-#include "checkpoints.h"
-#include "coincontrol.h"
-#include "consensus/upgrades.h"
-#include "consensus/validation.h"
-#include "consensus/consensus.h"
-#include "init.h"
-#include "key_io.h"
-#include "main.h"
-#include "net.h"
-#include "rpc/protocol.h"
-#include "script/script.h"
-#include "script/sign.h"
-#include "timedata.h"
-#include "utilmoneystr.h"
-#include "zcash/Note.hpp"
-#include "crypter.h"
-#include "coins.h"
-#include "zcash/zip32.h"
-#include "cc/CCinclude.h"
-#include "komodo_utils.h"
-#include "komodo_bitcoind.h"
-#include "komodo_notary.h"
-#include "komodo_interest.h"
-#include "komodo_globals.h"
+#include <checkpoints.h>
+#include <coincontrol.h>
+#include <consensus/upgrades.h>
+#include <consensus/validation.h>
+#include <consensus/consensus.h>
+#include <init.h>
+#include <key_io.h>
+#include <main.h>
+#include <net.h>
+#include <rpc/protocol.h>
+#include <script/script.h>
+#include <script/sign.h>
+#include <timedata.h>
+#include <utilmoneystr.h>
+#include <zcash/Note.hpp>
+#include <wallet/crypter.h>
+#include <coins.h>
+#include <zcash/zip32.h>
+#include <cc/CCinclude.h>
+#include <komodo_utils.h>
+#include <komodo_bitcoind.h>
+#include <komodo_notary.h>
+#include <komodo_interest.h>
+#include <komodo_globals.h>
 
 #include <assert.h>
 
@@ -65,7 +65,7 @@ unsigned int nTxConfirmTarget = DEFAULT_TX_CONFIRM_TARGET;
 bool bSpendZeroConfChange = true;
 bool fSendFreeTransactions = false;
 bool fPayAtLeastCustomFee = true;
-#include "komodo_defs.h"
+#include <komodo_defs.h>
 
 const char * DEFAULT_WALLET_DAT = "wallet.dat";
 

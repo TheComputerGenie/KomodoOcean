@@ -18,27 +18,27 @@
  *                                                                            *
  ******************************************************************************/
 
-#include "clientversion.h"
-#include "init.h"
-#include "key_io.h"
-#include "main.h"
-#include "net.h"
-#include "netbase.h"
-#include "rpc/server.h"
-#include "txmempool.h"
-#include "util.h"
-#include "notaries_staked.h"
-#include "cc/eval.h"
-#include "cc/CCinclude.h"
-#include "hex.h"
-#include "komodo_bitcoind.h"
-#include "komodo_notary.h"
-#include "komodo_utils.h"
-#include "komodo_globals.h"
-#include "cc/CCinclude.h"
+#include <clientversion.h>
+#include <init.h>
+#include <key_io.h>
+#include <main.h>
+#include <rpc/net.h>
+#include <netbase.h>
+#include <rpc/server.h>
+#include <txmempool.h>
+#include <util.h>
+#include <notaries_staked.h>
+#include <cc/eval.h>
+#include <cc/CCinclude.h>
+#include <hex.h>
+#include <komodo_bitcoind.h>
+#include <komodo_notary.h>
+#include <komodo_utils.h>
+#include <komodo_globals.h>
+#include <cc/CCinclude.h>
 #ifdef ENABLE_WALLET
-#include "wallet/wallet.h"
-#include "wallet/walletdb.h"
+#include <wallet/wallet.h>
+#include <wallet/walletdb.h>
 #endif
 
 #include <stdint.h>
@@ -47,7 +47,7 @@
 
 #include <univalue.h>
 
-#include "zcash/Address.hpp"
+#include <zcash/Address.hpp>
 
 using namespace std;
 

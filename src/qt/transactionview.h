@@ -5,7 +5,7 @@
 #ifndef KOMODO_QT_TRANSACTIONVIEW_H
 #define KOMODO_QT_TRANSACTIONVIEW_H
 
-#include "guiutil.h"
+#include <qt/guiutil.h>
 
 #include <uint256.h>
 

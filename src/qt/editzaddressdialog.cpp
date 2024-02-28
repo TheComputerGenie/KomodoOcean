@@ -2,11 +2,11 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "editzaddressdialog.h"
-#include "ui_editzaddressdialog.h"
+#include <qt/editzaddressdialog.h>
+#include <ui_editzaddressdialog.h>
 
-#include "zaddresstablemodel.h"
-#include "guiutil.h"
+#include <qt/zaddresstablemodel.h>
+#include <qt/guiutil.h>
 
 #include <QDataWidgetMapper>
 #include <QMessageBox>

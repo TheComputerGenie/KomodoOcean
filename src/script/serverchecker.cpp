@@ -18,14 +18,14 @@
  *                                                                            *
  ******************************************************************************/
 
-#include "serverchecker.h"
-#include "script/cc.h"
-#include "cc/eval.h"
+#include <script/serverchecker.h>
+#include <script/cc.h>
+#include <cc/eval.h>
 
-#include "pubkey.h"
-#include "random.h"
-#include "uint256.h"
-#include "util.h"
+#include <pubkey.h>
+#include <random.h>
+#include <uint256.h>
+#include <util.h>
 
 #undef __cpuid
 #include <boost/thread.hpp>

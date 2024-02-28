@@ -23,13 +23,13 @@
 
 #define KOMODO_ENABLE_INTEREST //enabling this is a hardfork, activate with new RR method
 
-#include "compressor.h"
-#include "core_memusage.h"
-#include "memusage.h"
-#include "serialize.h"
-#include "uint256.h"
-#include "base58.h"
-#include "pubkey.h"
+#include <compressor.h>
+#include <core_memusage.h>
+#include <memusage.h>
+#include <serialize.h>
+#include <uint256.h>
+#include <base58.h>
+#include <pubkey.h>
 
 #include <assert.h>
 #include <stdint.h>
@@ -38,7 +38,7 @@
 
 #include <boost/foreach.hpp>
 #include <boost/unordered_map.hpp>
-#include "zcash/IncrementalMerkleTree.hpp"
+#include <zcash/IncrementalMerkleTree.hpp>
 
 /**
  * Pruned version of CTransaction: only retains metadata and unspent transaction outputs

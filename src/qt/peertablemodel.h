@@ -5,8 +5,8 @@
 #ifndef KOMODO_QT_PEERTABLEMODEL_H
 #define KOMODO_QT_PEERTABLEMODEL_H
 
-#include "net.h"
-#include "main.h"
+#include <net.h>
+#include <main.h>
 
 #include <QAbstractTableModel>
 #include <QStringList>

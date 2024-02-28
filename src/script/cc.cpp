@@ -13,8 +13,8 @@
  *                                                                            *
  ******************************************************************************/
 
-#include "cryptoconditions/include/cryptoconditions.h"
-#include "script/cc.h"
+#include <cryptoconditions/include/cryptoconditions.h>
+#include <script/cc.h>
 
 
 bool IsCryptoConditionsEnabled() {

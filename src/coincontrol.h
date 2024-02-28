@@ -20,8 +20,8 @@
 #ifndef BITCOIN_COINCONTROL_H
 #define BITCOIN_COINCONTROL_H
 
-#include "primitives/transaction.h"
-#include "wallet/wallet_fees.h"
+#include <primitives/transaction.h>
+#include <wallet/wallet_fees.h>
 
 /** Coin Control Features. */
 class CCoinControl {

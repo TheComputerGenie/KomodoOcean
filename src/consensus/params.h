@@ -6,7 +6,7 @@
 #ifndef KOMODO_CONSENSUS_PARAMS_H
 #define KOMODO_CONSENSUS_PARAMS_H
 
-#include "uint256.h"
+#include <uint256.h>
 
 #include <boost/optional.hpp>
 

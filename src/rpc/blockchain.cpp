@@ -18,33 +18,33 @@
  *                                                                            *
  ******************************************************************************/
 
-#include "amount.h"
-#include "chain.h"
-#include "chainparams.h"
-#include "checkpoints.h"
-#include "crosschain.h"
-#include "base58.h"
-#include "consensus/validation.h"
-#include "cc/eval.h"
-#include "main.h"
-#include "primitives/transaction.h"
-#include "rpc/server.h"
-#include "streams.h"
-#include "sync.h"
-#include "util.h"
-#include "script/script.h"
-#include "script/script_error.h"
-#include "script/sign.h"
-#include "script/standard.h"
-#include "komodo_defs.h"
-#include "komodo_structs.h"
-#include "komodo_globals.h"
-#include "komodo_notary.h"
-#include "komodo_bitcoind.h"
-#include "komodo_utils.h"
-#include "komodo_kv.h"
-#include "komodo_gateway.h"
-#include "rpc/rawtransaction.h"
+#include <amount.h>
+#include <chain.h>
+#include <chainparams.h>
+#include <checkpoints.h>
+#include <crosschain.h>
+#include <base58.h>
+#include <consensus/validation.h>
+#include <cc/eval.h>
+#include <main.h>
+#include <primitives/transaction.h>
+#include <rpc/server.h>
+#include <streams.h>
+#include <sync.h>
+#include <util.h>
+#include <script/script.h>
+#include <script/script_error.h>
+#include <script/sign.h>
+#include <script/standard.h>
+#include <komodo_defs.h>
+#include <komodo_structs.h>
+#include <komodo_globals.h>
+#include <komodo_notary.h>
+#include <komodo_bitcoind.h>
+#include <komodo_utils.h>
+#include <komodo_kv.h>
+#include <komodo_gateway.h>
+#include <rpc/rawtransaction.h>
 
 #include <stdint.h>
 
@@ -52,7 +52,7 @@
 
 #include <regex>
 
-#include "cc/CCinclude.h"
+#include <cc/CCinclude.h>
 
 using namespace std;
 
@@ -61,9 +61,9 @@ using namespace std;
 //extern void TxToJSON(const CTransaction& tx, const uint256 hashBlock, UniValue& entry);
 //void ScriptPubKeyToJSON(const CScript& scriptPubKey, UniValue& out, bool fIncludeHex);
 //int32_t komodo_notarized_height(int32_t *prevMoMheightp,uint256 *hashp,uint256 *txidp);
-//#include "komodo_defs.h"
-#include "komodo_structs.h"
-#include "komodo_interest.h"
+
+#include <komodo_structs.h>
+#include <komodo_interest.h>
 
 double GetDifficultyINTERNAL(const CBlockIndex* blockindex, bool networkDifficulty) {
     // Floating point number that is a multiple of the minimum difficulty,

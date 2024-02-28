@@ -6,16 +6,16 @@
 #define KOMODO_QT_WALLETMODEL_H
 
 #if defined(HAVE_CONFIG_H)
-#include "config/bitcoin-config.h"
+#include <config/bitcoin-config.h>
 #endif
 
 #ifdef ENABLE_BIP70
-#include "paymentrequestplus.h"
+#include <qt/paymentrequestplus.h>
 #endif
-#include "walletmodeltransaction.h"
-#include "walletmodelztransaction.h"
+#include <qt/walletmodeltransaction.h>
+#include <qt/walletmodelztransaction.h>
 
-#include "support/allocators/secure.h"
+#include <support/allocators/secure.h>
 
 #include <map>
 #include <vector>

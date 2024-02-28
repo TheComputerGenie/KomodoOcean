@@ -17,28 +17,28 @@
  *                                                                            *
  ******************************************************************************/
 
-#include "asyncrpcqueue.h"
-#include "amount.h"
-#include "consensus/upgrades.h"
-#include "core_io.h"
-#include "init.h"
-#include "key_io.h"
-#include "main.h"
-#include "net.h"
-#include "netbase.h"
-#include "rpc/protocol.h"
-#include "rpc/server.h"
-#include "timedata.h"
-#include "util.h"
-#include "utilmoneystr.h"
-#include "wallet.h"
-#include "walletdb.h"
-#include "script/interpreter.h"
-#include "utiltime.h"
-#include "zcash/IncrementalMerkleTree.hpp"
-#include "sodium.h"
-#include "miner.h"
-#include "komodo_globals.h"
+#include <asyncrpcqueue.h>
+#include <amount.h>
+#include <consensus/upgrades.h>
+#include <core_io.h>
+#include <init.h>
+#include <key_io.h>
+#include <main.h>
+#include <net.h>
+#include <netbase.h>
+#include <rpc/protocol.h>
+#include <rpc/server.h>
+#include <timedata.h>
+#include <util.h>
+#include <utilmoneystr.h>
+#include <wallet/wallet.h>
+#include <wallet/walletdb.h>
+#include <script/interpreter.h>
+#include <utiltime.h>
+#include <zcash/IncrementalMerkleTree.hpp>
+#include <sodium.h>
+#include <miner.h>
+#include <komodo_globals.h>
 
 #include <array>
 #include <iostream>
@@ -46,10 +46,10 @@
 #include <thread>
 #include <string>
 
-#include "asyncrpcoperation_shieldcoinbase.h"
+#include <wallet/asyncrpcoperation_shieldcoinbase.h>
 
-#include "paymentdisclosure.h"
-#include "paymentdisclosuredb.h"
+#include <paymentdisclosure.h>
+#include <paymentdisclosuredb.h>
 
 using namespace libzcash;
 

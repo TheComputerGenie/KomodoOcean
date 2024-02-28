@@ -10,7 +10,7 @@
 
 #include <atomic>
 
-#include "net.h"
+#include <net.h>
 
 class BanTableModel;
 class OptionsModel;

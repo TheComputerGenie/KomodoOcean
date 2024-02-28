@@ -18,33 +18,33 @@
  *                                                                            *
  ******************************************************************************/
 
-#include "consensus/upgrades.h"
-#include "consensus/validation.h"
-#include "core_io.h"
-#include "init.h"
-#include "deprecation.h"
-#include "key_io.h"
-#include "keystore.h"
-#include "main.h"
-#include "merkleblock.h"
-#include "net.h"
-#include "primitives/transaction.h"
-#include "rpc/server.h"
-#include "script/script.h"
-#include "script/script_error.h"
-#include "script/sign.h"
-#include "script/standard.h"
-#include "uint256.h"
-#include "importcoin.h"
-#include "komodo_notary.h"
-#include "komodo_bitcoind.h"
+#include <consensus/upgrades.h>
+#include <consensus/validation.h>
+#include <core_io.h>
+#include <init.h>
+#include <deprecation.h>
+#include <key_io.h>
+#include <keystore.h>
+#include <main.h>
+#include <merkleblock.h>
+#include <rpc/net.h>
+#include <primitives/transaction.h>
+#include <rpc/server.h>
+#include <script/script.h>
+#include <script/script_error.h>
+#include <script/sign.h>
+#include <script/standard.h>
+#include <uint256.h>
+#include <importcoin.h>
+#include <komodo_notary.h>
+#include <komodo_bitcoind.h>
 #ifdef ENABLE_WALLET
-#include "wallet/wallet.h"
+#include <wallet/wallet.h>
 #endif
 
-#include "komodo_defs.h"
-#include "assetchain.h"
-#include "komodo_interest.h"
+#include <komodo_defs.h>
+#include <assetchain.h>
+#include <komodo_interest.h>
 
 #include <stdint.h>
 

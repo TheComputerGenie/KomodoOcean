@@ -12,10 +12,10 @@
  * Removal or modification of this copyright notice is prohibited.            *
  *                                                                            *
  ******************************************************************************/
-#include "komodo_structs.h"
-#include "komodo_globals.h"
-#include "komodo_bitcoind.h"
-#include "mem_read.h"
+#include <komodo_structs.h>
+#include <komodo_globals.h>
+#include <komodo_bitcoind.h>
+#include <mem_read.h>
 
 namespace komodo {
 

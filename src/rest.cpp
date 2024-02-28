@@ -18,18 +18,18 @@
  *                                                                            *
  ******************************************************************************/
 
-#include "primitives/block.h"
-#include "primitives/transaction.h"
-#include "main.h"
-#include "httpserver.h"
-#include "rpc/server.h"
-#include "streams.h"
-#include "sync.h"
-#include "txmempool.h"
-#include "utilstrencodings.h"
-#include "version.h"
-#include "rpc/rawtransaction.h"
-#include "rpc/blockchain.h"
+#include <primitives/block.h>
+#include <primitives/transaction.h>
+#include <main.h>
+#include <httpserver.h>
+#include <rpc/server.h>
+#include <streams.h>
+#include <sync.h>
+#include <txmempool.h>
+#include <utilstrencodings.h>
+#include <version.h>
+#include <rpc/rawtransaction.h>
+#include <rpc/blockchain.h>
 
 #include <boost/algorithm/string.hpp>
 #include <boost/dynamic_bitset.hpp>

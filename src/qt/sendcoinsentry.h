@@ -5,7 +5,7 @@
 #ifndef KOMODO_QT_SENDCOINSENTRY_H
 #define KOMODO_QT_SENDCOINSENTRY_H
 
-#include "walletmodel.h"
+#include <qt/walletmodel.h>
 
 #include <QStackedWidget>
 

@@ -18,10 +18,10 @@
  *                                                                            *
  ******************************************************************************/
 
-#include "noui.h"
+#include <noui.h>
 
-#include "ui_interface.h"
-#include "util.h"
+#include <ui_interface.h>
+#include <util.h>
 
 #include <cstdio>
 #include <stdint.h>

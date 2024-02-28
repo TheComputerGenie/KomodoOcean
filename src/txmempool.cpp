@@ -18,22 +18,22 @@
  *                                                                            *
  ******************************************************************************/
 
-#include "txmempool.h"
+#include <txmempool.h>
 
-#include "clientversion.h"
-#include "consensus/consensus.h"
-#include "consensus/validation.h"
-#include "main.h"
-#include "policy/fees.h"
-#include "streams.h"
-#include "timedata.h"
-#include "util.h"
-#include "utilmoneystr.h"
-#include "validationinterface.h"
-#include "version.h"
-#include "komodo_globals.h"
-#include "komodo_utils.h"
-#include "komodo_bitcoind.h"
+#include <clientversion.h>
+#include <consensus/consensus.h>
+#include <consensus/validation.h>
+#include <main.h>
+#include <policy/fees.h>
+#include <streams.h>
+#include <timedata.h>
+#include <util.h>
+#include <utilmoneystr.h>
+#include <validationinterface.h>
+#include <version.h>
+#include <komodo_globals.h>
+#include <komodo_utils.h>
+#include <komodo_bitcoind.h>
 
 using namespace std;
 

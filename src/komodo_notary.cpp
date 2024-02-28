@@ -12,13 +12,13 @@
  * Removal or modification of this copyright notice is prohibited.            *
  *                                                                            *
  ******************************************************************************/
-#include "komodo_notary.h"
-#include "komodo_globals.h"
-#include "komodo_extern_globals.h"
-#include "komodo.h" // komodo_stateupdate()
-#include "komodo_structs.h" // KOMODO_NOTARIES_HARDCODED
-#include "komodo_utils.h" // komodo_stateptr
-#include "komodo_bitcoind.h"
+#include <komodo_notary.h>
+#include <komodo_globals.h>
+#include <komodo_extern_globals.h>
+#include <komodo.h> // komodo_stateupdate()
+#include <komodo_structs.h> // KOMODO_NOTARIES_HARDCODED
+#include <komodo_utils.h> // komodo_stateptr
+#include <komodo_bitcoind.h>
 
 //struct knotaries_entry *Pubkeys;  // todo remove
 

@@ -18,13 +18,13 @@
  *                                                                            *
  ******************************************************************************/
 
-#include "timedata.h"
+#include <timedata.h>
 
-#include "netbase.h"
-#include "sync.h"
-#include "ui_interface.h"
-#include "util.h"
-#include "utilstrencodings.h"
+#include <netbase.h>
+#include <sync.h>
+#include <ui_interface.h>
+#include <util.h>
+#include <utilstrencodings.h>
 
 CTimeWarning timeWarning;
 

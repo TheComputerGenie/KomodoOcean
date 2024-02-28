@@ -17,8 +17,8 @@
  *                                                                            *
  ******************************************************************************/
 
-#include "consensus/upgrades.h"
-#include "util.h"
+#include <consensus/upgrades.h>
+#include <util.h>
 extern int32_t KOMODO_NSPV;
 #define NSPV_BRANCHID 0x76b809bb
 

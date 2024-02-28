@@ -20,20 +20,20 @@
 #ifndef ASYNCRPCOPERATION_SHIELDCOINBASE_H
 #define ASYNCRPCOPERATION_SHIELDCOINBASE_H
 
-#include "asyncrpcoperation.h"
-#include "amount.h"
-#include "primitives/transaction.h"
-#include "transaction_builder.h"
-#include "zcash/JoinSplit.hpp"
-#include "zcash/Address.hpp"
-#include "wallet.h"
+#include <asyncrpcoperation.h>
+#include <amount.h>
+#include <primitives/transaction.h>
+#include <transaction_builder.h>
+#include <zcash/JoinSplit.hpp>
+#include <zcash/Address.hpp>
+#include <wallet/wallet.h>
 
 #include <unordered_map>
 #include <tuple>
 
 #include <univalue.h>
 
-#include "paymentdisclosure.h"
+#include <paymentdisclosure.h>
 
 // Default transaction fee if caller does not specify one.
 #define SHIELD_COINBASE_DEFAULT_MINERS_FEE   10000

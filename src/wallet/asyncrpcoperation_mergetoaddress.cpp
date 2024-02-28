@@ -17,36 +17,36 @@
  *                                                                            *
  ******************************************************************************/
 
-#include "asyncrpcoperation_mergetoaddress.h"
+#include <wallet/asyncrpcoperation_mergetoaddress.h>
 
-#include "amount.h"
-#include "asyncrpcqueue.h"
-#include "core_io.h"
-#include "init.h"
-#include "key_io.h"
-#include "main.h"
-#include "miner.h"
-#include "net.h"
-#include "netbase.h"
-#include "rpc/protocol.h"
-#include "rpc/server.h"
-#include "script/interpreter.h"
-#include "sodium.h"
-#include "timedata.h"
-#include "util.h"
-#include "utilmoneystr.h"
-#include "utiltime.h"
-#include "wallet.h"
-#include "walletdb.h"
-#include "zcash/IncrementalMerkleTree.hpp"
-#include "komodo_bitcoind.h"
+#include <amount.h>
+#include <asyncrpcqueue.h>
+#include <core_io.h>
+#include <init.h>
+#include <key_io.h>
+#include <main.h>
+#include <miner.h>
+#include <net.h>
+#include <netbase.h>
+#include <rpc/protocol.h>
+#include <rpc/server.h>
+#include <script/interpreter.h>
+#include <sodium.h>
+#include <timedata.h>
+#include <util.h>
+#include <utilmoneystr.h>
+#include <utiltime.h>
+#include <wallet/wallet.h>
+#include <wallet/walletdb.h>
+#include <zcash/IncrementalMerkleTree.hpp>
+#include <komodo_bitcoind.h>
 
 #include <chrono>
 #include <iostream>
 #include <string>
 #include <thread>
 
-#include "paymentdisclosuredb.h"
+#include <paymentdisclosuredb.h>
 
 using namespace libzcash;
 

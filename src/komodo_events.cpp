@@ -12,12 +12,12 @@
  * Removal or modification of this copyright notice is prohibited.            *
  *                                                                            *
  ******************************************************************************/
-#include "komodo_events.h"
-#include "komodo_globals.h"
-#include "komodo_bitcoind.h" // komodo_verifynotarization
-#include "komodo_notary.h" // komodo_notarized_update
-#include "komodo_utils.h" // portable_mutex_lock / unlock
-#include "komodo_kv.h"
+#include <komodo_events.h>
+#include <komodo_globals.h>
+#include <komodo_bitcoind.h> // komodo_verifynotarization
+#include <komodo_notary.h> // komodo_notarized_update
+#include <komodo_utils.h> // portable_mutex_lock / unlock
+#include <komodo_kv.h>
 
 #define KOMODO_EVENT_RATIFY 'P'
 #define KOMODO_EVENT_NOTARIZED 'N'

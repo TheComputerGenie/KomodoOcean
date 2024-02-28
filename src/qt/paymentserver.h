@@ -33,13 +33,13 @@
 //
 
 #if defined(HAVE_CONFIG_H)
-#include "config/bitcoin-config.h"
+#include <config/bitcoin-config.h>
 #endif
 
 #ifdef ENABLE_BIP70
-#include "paymentrequestplus.h"
+#include <qt/paymentrequestplus.h>
 #endif
-#include "walletmodel.h"
+#include <qt/walletmodel.h>
 
 #include <QObject>
 #include <QString>

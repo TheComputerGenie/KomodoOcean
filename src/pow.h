@@ -21,8 +21,8 @@
 #ifndef BITCOIN_POW_H
 #define BITCOIN_POW_H
 
-#include "chain.h"
-#include "consensus/params.h"
+#include <chain.h>
+#include <consensus/params.h>
 
 #include <stdint.h>
 

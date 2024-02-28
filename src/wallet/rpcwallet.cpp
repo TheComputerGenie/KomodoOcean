@@ -18,44 +18,44 @@
  *                                                                            *
  ******************************************************************************/
 
-#include "amount.h"
-#include "consensus/upgrades.h"
-#include "core_io.h"
-#include "init.h"
-#include "key_io.h"
-#include "main.h"
-#include "net.h"
-#include "netbase.h"
-#include "rpc/server.h"
-#include "timedata.h"
-#include "transaction_builder.h"
-#include "util.h"
-#include "utilmoneystr.h"
-#include "wallet.h"
-#include "walletdb.h"
-#include "primitives/transaction.h"
-#include "zcbenchmarks.h"
-#include "script/interpreter.h"
-#include "zcash/zip32.h"
-#include "notaries_staked.h"
-#include "komodo.h"
-#include "komodo_bitcoind.h"
-#include "komodo_notary.h"
-#include "komodo_kv.h"
-#include "komodo_gateway.h"
-#include "komodo_globals.h"
+#include <amount.h>
+#include <consensus/upgrades.h>
+#include <core_io.h>
+#include <init.h>
+#include <key_io.h>
+#include <main.h>
+#include <net.h>
+#include <netbase.h>
+#include <rpc/server.h>
+#include <timedata.h>
+#include <transaction_builder.h>
+#include <util.h>
+#include <utilmoneystr.h>
+#include <wallet/wallet.h>
+#include <wallet/walletdb.h>
+#include <primitives/transaction.h>
+#include <zcbenchmarks.h>
+#include <script/interpreter.h>
+#include <zcash/zip32.h>
+#include <notaries_staked.h>
+#include <komodo.h>
+#include <komodo_bitcoind.h>
+#include <komodo_notary.h>
+#include <komodo_kv.h>
+#include <komodo_gateway.h>
+#include <komodo_globals.h>
 
-#include "utiltime.h"
-#include "asyncrpcoperation.h"
-#include "asyncrpcqueue.h"
-#include "wallet/asyncrpcoperation_mergetoaddress.h"
-#include "wallet/asyncrpcoperation_sendmany.h"
-#include "wallet/asyncrpcoperation_shieldcoinbase.h"
+#include <utiltime.h>
+#include <asyncrpcoperation.h>
+#include <asyncrpcqueue.h>
+#include <wallet/asyncrpcoperation_mergetoaddress.h>
+#include <wallet/asyncrpcoperation_sendmany.h>
+#include <wallet/asyncrpcoperation_shieldcoinbase.h>
 
-#include "consensus/upgrades.h"
-#include "coincontrol.h"
+#include <consensus/upgrades.h>
+#include <coincontrol.h>
 
-#include "sodium.h"
+#include <sodium.h>
 
 #include <stdint.h>
 
@@ -65,11 +65,11 @@
 
 #include <numeric>
 
-#include "main.h"
-#include "rpc/rawtransaction.h"
-#include "komodo_defs.h"
-#include "komodo_interest.h"
-#include "hex.h"
+#include <main.h>
+#include <rpc/rawtransaction.h>
+#include <komodo_defs.h>
+#include <komodo_interest.h>
+#include <hex.h>
 #include <string.h>
 
 using namespace std;
@@ -588,7 +588,7 @@ UniValue sendtoaddress(const UniValue& params, bool fHelp, const CPubKey& mypk) 
 #define KOMODO_KVDURATION 1440
 #define IGUANA_MAXSCRIPTSIZE 10001
 #define CRYPTO777_KMDADDR "RXL3YXG2ceaB6C5hfJcN4fvmLH2C34knhA"
-#include "komodo_defs.h"*/
+#include <komodo_defs.h>*/
 
 /*
 #define IGUANA_MAXSCRIPTSIZE 10001
@@ -5303,7 +5303,7 @@ UniValue z_listoperationids(const UniValue& params, bool fHelp, const CPubKey& m
 }
 
 
-#include "script/sign.h"
+#include <script/sign.h>
 
 /**
  * @brief Search for 10k sat. P2PK notary utxos and make proof tx (txNew) from it for further include in block.
@@ -5380,18 +5380,18 @@ int32_t komodo_notaryvin(CMutableTransaction &txNew, uint8_t *notarypub33, const
     return siglen;
 }
 
-#include "../cc/CCfaucet.h"
-#include "../cc/CCassets.h"
-#include "../cc/CCrewards.h"
-#include "../cc/CCdice.h"
-#include "../cc/CCfsm.h"
-#include "../cc/CCauction.h"
-#include "../cc/CClotto.h"
-#include "../cc/CCchannels.h"
-#include "../cc/CCOracles.h"
-#include "../cc/CCGateways.h"
-#include "../cc/CCHeir.h"
-#include "../cc/CCPayments.h"
+#include <wallet/../cc/CCfaucet.h>
+#include <wallet/../cc/CCassets.h>
+#include <wallet/../cc/CCrewards.h>
+#include <wallet/../cc/CCdice.h>
+#include <wallet/../cc/CCfsm.h>
+#include <wallet/../cc/CCauction.h>
+#include <wallet/../cc/CClotto.h>
+#include <wallet/../cc/CCchannels.h>
+#include <wallet/../cc/CCOracles.h>
+#include <wallet/../cc/CCGateways.h>
+#include <wallet/../cc/CCHeir.h>
+#include <wallet/../cc/CCPayments.h>
 
 int32_t ensure_CCrequirements(uint8_t evalcode) {
     CCerror = "";

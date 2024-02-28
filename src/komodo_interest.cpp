@@ -12,10 +12,10 @@
  * Removal or modification of this copyright notice is prohibited.            *
  *                                                                            *
  ******************************************************************************/
-#include "komodo_interest.h"
-#include "komodo_bitcoind.h"
-#include "komodo_utils.h" // dstr()
-#include "komodo_hardfork.h"
+#include <komodo_interest.h>
+#include <komodo_bitcoind.h>
+#include <komodo_utils.h> // dstr()
+#include <komodo_hardfork.h>
 
 #define KOMODO_INTEREST ((uint64_t)5000000) //((uint64_t)(0.05 * COIN))   // 5%
 

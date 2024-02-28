@@ -3,25 +3,25 @@
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #if defined(HAVE_CONFIG_H)
-#include "config/bitcoin-config.h"
+#include <config/bitcoin-config.h>
 #endif
 
-#include "optionsmodel.h"
+#include <qt/optionsmodel.h>
 
-#include "komodounits.h"
-#include "guiutil.h"
+#include <qt/komodounits.h>
+#include <qt/guiutil.h>
 
-#include "amount.h"
-#include "init.h"
-#include "net.h"
-#include "netbase.h"
-#include "txdb.h" // for -dbcache defaults
-#include "intro.h"
-#include "main.h"
+#include <amount.h>
+#include <init.h>
+#include <net.h>
+#include <netbase.h>
+#include <txdb.h> // for -dbcache defaults
+#include <qt/intro.h>
+#include <main.h>
 
 #ifdef ENABLE_WALLET
-#include "wallet/wallet.h"
-#include "wallet/walletdb.h"
+#include <wallet/wallet.h>
+#include <wallet/walletdb.h>
 #endif
 
 #ifdef ENABLE_BIP70

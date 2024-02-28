@@ -13,18 +13,18 @@
  *                                                                            *
  ******************************************************************************/
 
-#include "crosschain.h"
-#include "importcoin.h"
-#include "cc/utils.h"
-#include "coins.h"
-#include "hash.h"
-#include "script/cc.h"
-#include "primitives/transaction.h"
-#include "core_io.h"
-#include "script/sign.h"
-#include "wallet/wallet.h"
-#include "cc/CCinclude.h"
-#include "komodo_bitcoind.h"
+#include <crosschain.h>
+#include <importcoin.h>
+#include <cc/utils.h>
+#include <coins.h>
+#include <hash.h>
+#include <script/cc.h>
+#include <primitives/transaction.h>
+#include <core_io.h>
+#include <script/sign.h>
+#include <wallet/wallet.h>
+#include <cc/CCinclude.h>
+#include <komodo_bitcoind.h>
 
 
 /******

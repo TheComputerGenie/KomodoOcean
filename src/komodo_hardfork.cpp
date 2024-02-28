@@ -1,4 +1,4 @@
-#include "komodo_hardfork.h"
+#include <komodo_hardfork.h>
 
 const uint32_t nStakedDecemberHardforkTimestamp = 1576840000; //December 2019 hardfork 12/20/2019 @ 11:06am (UTC)
 const int32_t nDecemberHardforkHeight = 1670000;   //December 2019 hardfork

@@ -21,10 +21,10 @@
 #ifndef BITCOIN_CHAINPARAMS_H
 #define BITCOIN_CHAINPARAMS_H
 
-#include "chainparamsbase.h"
-#include "consensus/params.h"
-#include "primitives/block.h"
-#include "protocol.h"
+#include <chainparamsbase.h>
+#include <consensus/params.h>
+#include <primitives/block.h>
+#include <protocol.h>
 
 #define KOMODO_MINDIFF_NBITS 0x200f0f0f
 

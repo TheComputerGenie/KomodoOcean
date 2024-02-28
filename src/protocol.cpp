@@ -18,11 +18,11 @@
  *                                                                            *
  ******************************************************************************/
 
-#include "main.h"
-#include "protocol.h"
+#include <main.h>
+#include <protocol.h>
 
-#include "util.h"
-#include "utilstrencodings.h"
+#include <util.h>
+#include <utilstrencodings.h>
 
 #ifndef _WIN32
 # include <arpa/inet.h>

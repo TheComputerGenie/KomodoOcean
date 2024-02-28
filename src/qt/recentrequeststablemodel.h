@@ -5,7 +5,7 @@
 #ifndef KOMODO_QT_RECENTREQUESTSTABLEMODEL_H
 #define KOMODO_QT_RECENTREQUESTSTABLEMODEL_H
 
-#include "walletmodel.h"
+#include <qt/walletmodel.h>
 
 #include <QAbstractTableModel>
 #include <QStringList>

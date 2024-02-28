@@ -18,15 +18,15 @@
  *                                                                            *
  ******************************************************************************/
 
-#include "random.h"
+#include <random.h>
 
-#include "support/cleanse.h"
+#include <support/cleanse.h>
 #ifdef _WIN32
-#include "compat.h" // for Windows API
+#include <compat.h> // for Windows API
 #endif
-#include "serialize.h"        // for begin_ptr(vec)
-#include "util.h"             // for LogPrint()
-#include "utilstrencodings.h" // for GetTime()
+#include <serialize.h>        // for begin_ptr(vec)
+#include <util.h>             // for LogPrint()
+#include <utilstrencodings.h> // for GetTime()
 
 #include <limits>
 
@@ -34,7 +34,7 @@
 #include <sys/time.h>
 #endif
 
-#include "sodium.h"
+#include <sodium.h>
 
 static inline int64_t GetPerformanceCounter() {
     int64_t nCounter = 0;

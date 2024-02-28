@@ -21,11 +21,11 @@
 #ifndef BITCOIN_WALLET_DB_H
 #define BITCOIN_WALLET_DB_H
 
-#include "clientversion.h"
-#include "serialize.h"
-#include "streams.h"
-#include "sync.h"
-#include "version.h"
+#include <clientversion.h>
+#include <serialize.h>
+#include <streams.h>
+#include <sync.h>
+#include <version.h>
 
 #include <map>
 #include <string>
@@ -35,11 +35,11 @@
 
 #ifdef BUILD_ROGUE
 #ifdef __APPLE__
-#include "../depends/x86_64-apple-darwin18.6.0/include/db_cxx.h"
+#include <../depends/x86_64-apple-darwin18.6.0/include/db_cxx.h>
 #elif defined(_WIN32)
-#include "../depends/x86_64-w64-mingw32/include/db_cxx.h"
+#include <../depends/x86_64-w64-mingw32/include/db_cxx.h>
 #else
-#include "../depends/x86_64-unknown-linux-gnu/include/db_cxx.h"
+#include <../depends/x86_64-unknown-linux-gnu/include/db_cxx.h>
 #endif
 #else
 #include <db_cxx.h>

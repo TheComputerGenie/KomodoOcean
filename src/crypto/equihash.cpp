@@ -13,14 +13,14 @@
 // https://www.internetsociety.org/sites/default/files/blogs-media/equihash-asymmetric-proof-of-work-based-generalized-birthday-problem.pdf
 
 #if defined(HAVE_CONFIG_H)
-#include "config/bitcoin-config.h"
+#include <config/bitcoin-config.h>
 #endif
 
-#include "compat/endian.h"
-#include "crypto/equihash.h"
-#include "util.h"
+#include <compat/endian.h>
+#include <crypto/equihash.h>
+#include <util.h>
 #ifndef __linux__
-#include "compat/endian.h"
+#include <compat/endian.h>
 #endif
 #include <algorithm>
 #include <iostream>
@@ -53,7 +53,7 @@
 #endif
 
 #ifdef WIN32
-#include "compat/endian.h"
+#include <compat/endian.h>
 #endif
 */
 static EhSolverCancelledException solver_cancelled;

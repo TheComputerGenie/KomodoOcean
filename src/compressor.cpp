@@ -18,11 +18,11 @@
  *                                                                            *
  ******************************************************************************/
 
-#include "compressor.h"
+#include <compressor.h>
 
-#include "hash.h"
-#include "pubkey.h"
-#include "script/standard.h"
+#include <hash.h>
+#include <pubkey.h>
+#include <script/standard.h>
 
 bool CScriptCompressor::IsToKeyID(CKeyID &hash) const {
     if (script.size() == 25 && script[0] == OP_DUP && script[1] == OP_HASH160

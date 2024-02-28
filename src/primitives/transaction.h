@@ -21,15 +21,15 @@
 #ifndef BITCOIN_PRIMITIVES_TRANSACTION_H
 #define BITCOIN_PRIMITIVES_TRANSACTION_H
 
-#include "amount.h"
-#include "random.h"
-#include "script/script.h"
-#include "serialize.h"
-#include "streams.h"
-#include "uint256.h"
-#include "arith_uint256.h"
-#include "consensus/consensus.h"
-#include "hash.h"
+#include <amount.h>
+#include <random.h>
+#include <script/script.h>
+#include <serialize.h>
+#include <streams.h>
+#include <uint256.h>
+#include <arith_uint256.h>
+#include <consensus/consensus.h>
+#include <hash.h>
 
 #ifndef __APPLE__
 #include <stdint.h>
@@ -39,10 +39,10 @@
 
 #include <boost/variant.hpp>
 
-#include "zcash/NoteEncryption.hpp"
-#include "zcash/Zcash.h"
-#include "zcash/JoinSplit.hpp"
-#include "zcash/Proof.hpp"
+#include <zcash/NoteEncryption.hpp>
+#include <zcash/Zcash.h>
+#include <zcash/JoinSplit.hpp>
+#include <zcash/Proof.hpp>
 
 static const int SERIALIZE_TRANSACTION_NO_WITNESS = 0x40000000;
 

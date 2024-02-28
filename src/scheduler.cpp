@@ -17,9 +17,9 @@
  *                                                                            *
  ******************************************************************************/
 
-#include "scheduler.h"
+#include <scheduler.h>
 
-#include "reverselock.h"
+#include <reverselock.h>
 
 #include <assert.h>
 #include <boost/bind/bind.hpp>

@@ -170,7 +170,7 @@ class AmountSpinBox: public QAbstractSpinBox {
     void valueChanged();
 };
 
-#include "komodoamountfield.moc"
+#include <qt/komodoamountfield.moc>
 
 KomodoAmountField::KomodoAmountField(QWidget *parent) :
     QWidget(parent),

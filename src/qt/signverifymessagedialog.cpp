@@ -2,19 +2,19 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "signverifymessagedialog.h"
-#include "ui_signverifymessagedialog.h"
+#include <qt/signverifymessagedialog.h>
+#include <ui_signverifymessagedialog.h>
 
-#include "addressbookpage.h"
-#include "guiutil.h"
-#include "platformstyle.h"
-#include "walletmodel.h"
+#include <qt/addressbookpage.h>
+#include <qt/guiutil.h>
+#include <qt/platformstyle.h>
+#include <qt/walletmodel.h>
 
-#include "base58.h"
-#include "init.h"
-#include "main.h"
-#include "wallet/wallet.h"
-#include "key_io.h"
+#include <base58.h>
+#include <init.h>
+#include <main.h>
+#include <wallet/wallet.h>
+#include <key_io.h>
 
 #include <string>
 #include <vector>

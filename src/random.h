@@ -21,7 +21,7 @@
 #ifndef BITCOIN_RANDOM_H
 #define BITCOIN_RANDOM_H
 
-#include "uint256.h"
+#include <uint256.h>
 
 #include <functional>
 #include <stdint.h>

@@ -18,30 +18,30 @@
  *                                                                            *
  ******************************************************************************/
 
-#include "pow.h"
-#include "consensus/upgrades.h"
+#include <pow.h>
+#include <consensus/upgrades.h>
 
-#include "arith_uint256.h"
-#include "chain.h"
-#include "chainparams.h"
-#include "crypto/equihash.h"
-#include "primitives/block.h"
-#include "streams.h"
-#include "uint256.h"
-#include "util.h"
-#include "komodo.h"
-#include "komodo_notary.h"
-#include "komodo_extern_globals.h"
-#include "komodo_bitcoind.h"
+#include <arith_uint256.h>
+#include <chain.h>
+#include <chainparams.h>
+#include <crypto/equihash.h>
+#include <primitives/block.h>
+#include <streams.h>
+#include <uint256.h>
+#include <util.h>
+#include <komodo.h>
+#include <komodo_notary.h>
+#include <komodo_extern_globals.h>
+#include <komodo_bitcoind.h>
 
-#include "sodium.h"
+#include <sodium.h>
 
 #ifdef ENABLE_RUST
-#include "librustzcash.h"
+#include <librustzcash.h>
 #endif // ENABLE_RUST
 uint32_t komodo_chainactive_timestamp();
 
-#include "komodo_defs.h"
+#include <komodo_defs.h>
 
 /* from zawy repo
  Preliminary code for super-fast increases in difficulty.

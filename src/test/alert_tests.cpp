@@ -6,21 +6,21 @@
 // Unit tests for alert system
 //
 
-#include "alert.h"
-#include "chain.h"
-#include "chainparams.h"
-#include "clientversion.h"
-#include "data/alertTests.raw.h"
+#include <alert.h>
+#include <chain.h>
+#include <chainparams.h>
+#include <clientversion.h>
+#include <data/alertTests.raw.h>
 
-#include "main.h"
-#include "rpc/protocol.h"
-#include "rpc/server.h"
-#include "serialize.h"
-#include "streams.h"
-#include "util.h"
-#include "utilstrencodings.h"
+#include <main.h>
+#include <rpc/protocol.h>
+#include <rpc/server.h>
+#include <serialize.h>
+#include <streams.h>
+#include <util.h>
+#include <utilstrencodings.h>
 
-#include "test/test_bitcoin.h"
+#include <test/test_bitcoin.h>
 
 #include <fstream>
 
@@ -28,8 +28,8 @@
 #include <boost/foreach.hpp>
 #include <boost/test/unit_test.hpp>
 
-#include "key.h"
-#include "alertkeys.h"
+#include <key.h>
+#include <alertkeys.h>
 #include <iostream>
 
 /*

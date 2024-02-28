@@ -5,9 +5,9 @@
 #ifndef KOMODO_QT_WALLETMODELZTRANSACTION_H
 #define KOMODO_QT_WALLETMODELZTRANSACTION_H
 
-#include "walletmodel.h"
-#include "transaction_builder.h"
-#include "wallet/asyncrpcoperation_sendmany.h"
+#include <qt/walletmodel.h>
+#include <transaction_builder.h>
+#include <wallet/asyncrpcoperation_sendmany.h>
 
 #include <QObject>
 

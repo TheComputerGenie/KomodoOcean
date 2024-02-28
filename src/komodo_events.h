@@ -13,8 +13,8 @@
  *                                                                            *
  ******************************************************************************/
 #pragma once
-#include "komodo_defs.h"
-#include "komodo_structs.h"
+#include <komodo_defs.h>
+#include <komodo_structs.h>
 
 void komodo_eventadd_notarized(komodo_state *sp, const char *symbol,int32_t height, komodo::event_notarized& ntz);
 

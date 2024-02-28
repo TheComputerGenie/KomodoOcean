@@ -12,12 +12,12 @@
  * Removal or modification of this copyright notice is prohibited.            *
  *                                                                            *
  ******************************************************************************/
-#include "komodo_ccdata.h"
-#include "komodo_globals.h"
-#include "komodo_bitcoind.h"
-#include "komodo_extern_globals.h"
-#include "komodo_utils.h" // portable_mutex_lock
-#include "komodo_notary.h" // komodo_npptr
+#include <komodo_ccdata.h>
+#include <komodo_globals.h>
+#include <komodo_bitcoind.h>
+#include <komodo_extern_globals.h>
+#include <komodo_utils.h> // portable_mutex_lock
+#include <komodo_notary.h> // komodo_npptr
 
 struct komodo_ccdata *CC_data;
 // int32_t CC_firstheight;

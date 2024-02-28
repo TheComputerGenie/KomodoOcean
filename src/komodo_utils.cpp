@@ -12,15 +12,15 @@
  * Removal or modification of this copyright notice is prohibited.            *
  *                                                                            *
  ******************************************************************************/
-#include "komodo_defs.h"
-#include "komodo.h"
-#include "komodo_utils.h"
-#include "komodo_globals.h"
-#include "komodo_notary.h"
-#include "komodo_gateway.h"
-#include "notaries_staked.h"
+#include <komodo_defs.h>
+#include <komodo.h>
+#include <komodo_utils.h>
+#include <komodo_globals.h>
+#include <komodo_notary.h>
+#include <komodo_gateway.h>
+#include <notaries_staked.h>
 
-#include "cc/CCinclude.h"
+#include <cc/CCinclude.h>
 
 void vcalc_sha256(char deprecated[(256 >> 3) * 2 + 1],uint8_t hash[256 >> 3],uint8_t *src,int32_t len) {
     CSHA256().Write((const unsigned char *)src, len).Finalize(hash);

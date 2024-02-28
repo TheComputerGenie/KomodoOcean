@@ -20,17 +20,17 @@
 
 #include <cryptoconditions.h>
 
-#include "interpreter.h"
+#include <script/interpreter.h>
 
-#include "consensus/upgrades.h"
-#include "primitives/transaction.h"
-#include "cc/eval.h"
-#include "crypto/ripemd160.h"
-#include "crypto/sha1.h"
-#include "crypto/sha256.h"
-#include "pubkey.h"
-#include "script/script.h"
-#include "uint256.h"
+#include <consensus/upgrades.h>
+#include <primitives/transaction.h>
+#include <cc/eval.h>
+#include <crypto/ripemd160.h>
+#include <crypto/sha1.h>
+#include <crypto/sha256.h>
+#include <pubkey.h>
+#include <script/script.h>
+#include <uint256.h>
 
 
 

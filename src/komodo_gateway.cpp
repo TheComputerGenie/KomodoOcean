@@ -12,11 +12,11 @@
  * Removal or modification of this copyright notice is prohibited.            *
  *                                                                            *
  ******************************************************************************/
-#include "komodo.h"
-#include "komodo_globals.h"
-#include "komodo_utils.h" // komodo_stateptrget
-#include "komodo_bitcoind.h" // komodo_checkcommission
-#include "komodo_notary.h"
+#include <komodo.h>
+#include <komodo_globals.h>
+#include <komodo_utils.h> // komodo_stateptrget
+#include <komodo_bitcoind.h> // komodo_checkcommission
+#include <komodo_notary.h>
 
 const char *banned_txids[] = {
     "78cb4e21245c26b015b888b14c4f5096e18137d2741a6de9734d62b07014dfca", // vout1 only 233559

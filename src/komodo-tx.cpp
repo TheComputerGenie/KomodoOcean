@@ -17,20 +17,20 @@
  *                                                                            *
  ******************************************************************************/
 
-#include "clientversion.h"
-#include "coins.h"
-#include "consensus/consensus.h"
-#include "consensus/upgrades.h"
-#include "core_io.h"
-#include "key_io.h"
-#include "keystore.h"
-#include "primitives/transaction.h"
-#include "script/script.h"
-#include "script/sign.h"
+#include <clientversion.h>
+#include <coins.h>
+#include <consensus/consensus.h>
+#include <consensus/upgrades.h>
+#include <core_io.h>
+#include <key_io.h>
+#include <keystore.h>
+#include <primitives/transaction.h>
+#include <script/script.h>
+#include <script/sign.h>
 #include <univalue.h>
-#include "util.h"
-#include "utilmoneystr.h"
-#include "utilstrencodings.h"
+#include <util.h>
+#include <utilmoneystr.h>
+#include <utilstrencodings.h>
 
 #include <cstdio>
 
@@ -39,13 +39,13 @@
 
 using namespace std;
 
-#include "uint256.h"
-#include "arith_uint256.h"
-#include "komodo_structs.h"
-#include "komodo_globals.h"
-#include "komodo_defs.h"
+#include <uint256.h>
+#include <arith_uint256.h>
+#include <komodo_structs.h>
+#include <komodo_globals.h>
+#include <komodo_defs.h>
 
-#include "komodo_interest.h"
+#include <komodo_interest.h>
 
 CKey NSPV_key;
 char NSPV_pubkeystr[67],NSPV_wifstr[64];

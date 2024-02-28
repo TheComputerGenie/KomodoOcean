@@ -18,10 +18,10 @@
  *                                                                            *
  ******************************************************************************/
 
-#include "keystore.h"
+#include <keystore.h>
 
-#include "key.h"
-#include "util.h"
+#include <key.h>
+#include <util.h>
 
 #include <boost/foreach.hpp>
 

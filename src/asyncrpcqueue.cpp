@@ -17,7 +17,7 @@
  *                                                                            *
  ******************************************************************************/
 
-#include "asyncrpcqueue.h"
+#include <asyncrpcqueue.h>
 
 static std::atomic<size_t> workerCounter(0);
 

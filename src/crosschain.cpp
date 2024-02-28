@@ -13,17 +13,17 @@
  *                                                                            *
  ******************************************************************************/
 
-#include "cc/eval.h"
-#include "crosschain.h"
-#include "importcoin.h"
-#include "main.h"
-#include "merkleblock.h"
-#include "hex.h"
-#include "komodo_bitcoind.h"
-#include "cc/CCinclude.h"
-#include "komodo_notary.h"
-#include "notarisationdb.h"
-#include "cc/import.h"
+#include <cc/eval.h>
+#include <crosschain.h>
+#include <importcoin.h>
+#include <main.h>
+#include <merkleblock.h>
+#include <hex.h>
+#include <komodo_bitcoind.h>
+#include <cc/CCinclude.h>
+#include <komodo_notary.h>
+#include <notarisationdb.h>
+#include <cc/import.h>
 
 /*
  * The crosschain workflow.

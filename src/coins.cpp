@@ -17,17 +17,17 @@
  *                                                                            *
  ******************************************************************************/
 
-#include "coins.h"
+#include <coins.h>
 
-#include "memusage.h"
-#include "random.h"
-#include "version.h"
-#include "policy/fees.h"
-#include "komodo_defs.h"
-#include "importcoin.h"
-#include "komodo_utils.h"
-#include "komodo_bitcoind.h"
-#include "komodo_interest.h"
+#include <memusage.h>
+#include <random.h>
+#include <version.h>
+#include <policy/fees.h>
+#include <komodo_defs.h>
+#include <importcoin.h>
+#include <komodo_utils.h>
+#include <komodo_bitcoind.h>
+#include <komodo_interest.h>
 
 #include <assert.h>
 

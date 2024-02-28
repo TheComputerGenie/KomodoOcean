@@ -5,8 +5,8 @@
 #ifndef KOMODO_QT_TRANSACTIONRECORD_H
 #define KOMODO_QT_TRANSACTIONRECORD_H
 
-#include "amount.h"
-#include "uint256.h"
+#include <amount.h>
+#include <uint256.h>
 
 #include <QList>
 #include <QString>

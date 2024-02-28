@@ -17,32 +17,32 @@
  *                                                                            *
  ******************************************************************************/
 
-#include "asyncrpcoperation_sendmany.h"
-#include "asyncrpcqueue.h"
-#include "amount.h"
-#include "consensus/upgrades.h"
-#include "core_io.h"
-#include "init.h"
-#include "key_io.h"
-#include "main.h"
-#include "net.h"
-#include "netbase.h"
-#include "rpc/protocol.h"
-#include "rpc/server.h"
-#include "timedata.h"
-#include "util.h"
-#include "utilmoneystr.h"
-#include "wallet.h"
-#include "walletdb.h"
-#include "script/interpreter.h"
-#include "utiltime.h"
-#include "zcash/IncrementalMerkleTree.hpp"
-#include "sodium.h"
-#include "miner.h"
-#include "komodo_notary.h"
-#include "komodo_bitcoind.h"
-#include "rpc/rawtransaction.h"
-#include "komodo_bitcoind.h"
+#include <wallet/asyncrpcoperation_sendmany.h>
+#include <asyncrpcqueue.h>
+#include <amount.h>
+#include <consensus/upgrades.h>
+#include <core_io.h>
+#include <init.h>
+#include <key_io.h>
+#include <main.h>
+#include <net.h>
+#include <netbase.h>
+#include <rpc/protocol.h>
+#include <rpc/server.h>
+#include <timedata.h>
+#include <util.h>
+#include <utilmoneystr.h>
+#include <wallet/wallet.h>
+#include <wallet/walletdb.h>
+#include <script/interpreter.h>
+#include <utiltime.h>
+#include <zcash/IncrementalMerkleTree.hpp>
+#include <sodium.h>
+#include <miner.h>
+#include <komodo_notary.h>
+#include <komodo_bitcoind.h>
+#include <rpc/rawtransaction.h>
+#include <komodo_bitcoind.h>
 
 #include <stdint.h>
 
@@ -52,7 +52,7 @@
 #include <thread>
 #include <string>
 
-#include "paymentdisclosuredb.h"
+#include <paymentdisclosuredb.h>
 
 using namespace libzcash;
 

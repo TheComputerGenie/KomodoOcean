@@ -19,7 +19,7 @@
  *                                                                            *
  ******************************************************************************/
 
-#include "script_ext.h"
+#include <script/script_ext.h>
 
 using namespace std;
 

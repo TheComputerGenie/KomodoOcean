@@ -9,7 +9,7 @@
 #include <stdint.h>
 #include <string>
 
-#include "chain.h"
+#include <chain.h>
 
 #include <boost/signals2/last_value.hpp>
 #include <boost/signals2/signal.hpp>

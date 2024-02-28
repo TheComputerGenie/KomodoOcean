@@ -18,14 +18,14 @@
  *                                                                            *
  ******************************************************************************/
 
-#include "script.h"
+#include <script/script.h>
 
-#include "tinyformat.h"
-#include "utilstrencodings.h"
-#include "script/cc.h"
-#include "cc/eval.h"
-#include "standard.h"
-#include "cryptoconditions/include/cryptoconditions.h"
+#include <tinyformat.h>
+#include <utilstrencodings.h>
+#include <script/cc.h>
+#include <cc/eval.h>
+#include <script/standard.h>
+#include <cryptoconditions/include/cryptoconditions.h>
 
 using namespace std;
 

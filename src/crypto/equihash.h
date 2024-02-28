@@ -6,11 +6,11 @@
 #ifndef BITCOIN_EQUIHASH_H
 #define BITCOIN_EQUIHASH_H
 
-#include "crypto/sha256.h"
-#include "utilstrencodings.h"
+#include <crypto/sha256.h>
+#include <utilstrencodings.h>
 
-#include "sodium.h"
-#include "komodo_nk.h"
+#include <sodium.h>
+#include <komodo_nk.h>
 
 #include <cstring>
 #include <exception>
@@ -210,7 +210,7 @@ class Equihash {
     bool IsValidSolution(const eh_HashState& base_state, std::vector<unsigned char> soln);
 };
 
-#include "equihash.tcc"
+#include <crypto/equihash.tcc>
 /*
 * Equihash 200,9 (KMD/Zcash)
 * Equihash 150,5 (beam)

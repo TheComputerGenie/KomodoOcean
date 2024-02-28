@@ -3,13 +3,13 @@
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #if defined(HAVE_CONFIG_H)
-#include "config/bitcoin-config.h"
+#include <config/bitcoin-config.h>
 #endif
 
-#include "walletmodeltransaction.h"
+#include <qt/walletmodeltransaction.h>
 
-#include "policy/policy.h"
-#include "wallet/wallet.h"
+#include <policy/policy.h>
+#include <wallet/wallet.h>
 
 WalletModelTransaction::WalletModelTransaction(const QList<SendCoinsRecipient> &_recipients) :
     recipients(_recipients),

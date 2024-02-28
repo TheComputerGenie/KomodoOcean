@@ -2,10 +2,10 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "walletmodeltransaction.h"
+#include <qt/walletmodeltransaction.h>
 
-#include "policy/policy.h"
-#include "wallet/wallet.h"
+#include <policy/policy.h>
+#include <wallet/wallet.h>
 
 WalletModelZTransaction::WalletModelZTransaction(const QString &_fromaddress, const QList<SendCoinsRecipient> &_recipients, const CAmount& _fee) :
     fromaddress(_fromaddress),

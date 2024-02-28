@@ -18,13 +18,13 @@
  *                                                                            *
  ******************************************************************************/
 
-#include "zcashconsensus.h"
+#include <script/zcashconsensus.h>
 
-#include "consensus/upgrades.h"
-#include "primitives/transaction.h"
-#include "pubkey.h"
-#include "script/interpreter.h"
-#include "version.h"
+#include <consensus/upgrades.h>
+#include <primitives/transaction.h>
+#include <pubkey.h>
+#include <script/interpreter.h>
+#include <version.h>
 
 namespace {
 

@@ -2,17 +2,17 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "addresstablemodel.h"
+#include <qt/addresstablemodel.h>
 
-#include "guiutil.h"
-#include "walletmodel.h"
-#include "platformstyle.h"
+#include <qt/guiutil.h>
+#include <qt/walletmodel.h>
+#include <qt/platformstyle.h>
 
-#include "base58.h"
-#include "wallet/wallet.h"
+#include <base58.h>
+#include <wallet/wallet.h>
 
-#include "rpc/server.h"
-#include "key_io.h"
+#include <rpc/server.h>
+#include <key_io.h>
 #include <algorithm>
 #include <QFont>
 #include <QDebug>

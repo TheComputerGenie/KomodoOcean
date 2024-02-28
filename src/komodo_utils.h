@@ -15,11 +15,11 @@
 #pragma once
 #include <sys/time.h>
 
-#include "komodo_defs.h"
-#include "komodo_structs.h"
-#include "hex.h"
-#include "key_io.h"
-#include "cc/CCinclude.h"
+#include <komodo_defs.h>
+#include <komodo_structs.h>
+#include <hex.h>
+#include <key_io.h>
+#include <cc/CCinclude.h>
 #include <string.h>
 
 #ifdef _WIN32
@@ -35,7 +35,7 @@
 #define portable_mutex_lock pthread_mutex_lock
 #define portable_mutex_unlock pthread_mutex_unlock
 
-#include "mini-gmp.h"
+#include <mini-gmp.h>
 
 #define CRYPTO777_PUBSECPSTR "020e46e79a2a8d12b9b5d12c7a91adb4e454edfae43c0a0cb805427d2ac7613fd9"
 #define CRYPTO777_KMDADDR "RXL3YXG2ceaB6C5hfJcN4fvmLH2C34knhA"

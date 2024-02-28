@@ -5,7 +5,7 @@
 #ifndef KOMODO_QT_KOMODOAMOUNTFIELD_H
 #define KOMODO_QT_KOMODOAMOUNTFIELD_H
 
-#include "amount.h"
+#include <amount.h>
 
 #include <QWidget>
 

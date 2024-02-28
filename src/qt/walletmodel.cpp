@@ -3,41 +3,41 @@
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #if defined(HAVE_CONFIG_H)
-#include "config/bitcoin-config.h"
+#include <config/bitcoin-config.h>
 #endif
 
-#include "walletmodel.h"
+#include <qt/walletmodel.h>
 
-#include "addresstablemodel.h"
-#include "zaddresstablemodel.h"
-#include "consensus/validation.h"
-#include "guiconstants.h"
-#include "guiutil.h"
-#include "optionsmodel.h"
-#include "paymentserver.h"
-#include "recentrequeststablemodel.h"
-#include "sendcoinsdialog.h"
-#include "zsendcoinsdialog.h"
-#include "transactiontablemodel.h"
+#include <qt/addresstablemodel.h>
+#include <qt/zaddresstablemodel.h>
+#include <consensus/validation.h>
+#include <qt/guiconstants.h>
+#include <qt/guiutil.h>
+#include <qt/optionsmodel.h>
+#include <qt/paymentserver.h>
+#include <qt/recentrequeststablemodel.h>
+#include <qt/sendcoinsdialog.h>
+#include <qt/zsendcoinsdialog.h>
+#include <qt/transactiontablemodel.h>
 
-#include "base58.h"
-#include "chain.h"
-#include "keystore.h"
-#include "net.h" // for g_connman
-#include "policy/fees.h"
-#include "sync.h"
-#include "ui_interface.h"
-#include "util.h" // for GetBoolArg
-#include "coincontrol.h"
-#include "main.h"
-#include "wallet/wallet.h"
-#include "wallet/walletdb.h" // for BackupWallet
-#include "key_io.h"
-#include "komodo_defs.h"
-#include "utilmoneystr.h"
-#include "asyncrpcoperation.h"
-#include "asyncrpcqueue.h"
-#include "rpc/server.h"
+#include <base58.h>
+#include <chain.h>
+#include <keystore.h>
+#include <net.h> // for g_connman
+#include <policy/fees.h>
+#include <sync.h>
+#include <ui_interface.h>
+#include <util.h> // for GetBoolArg
+#include <coincontrol.h>
+#include <main.h>
+#include <wallet/wallet.h>
+#include <wallet/walletdb.h> // for BackupWallet
+#include <key_io.h>
+#include <komodo_defs.h>
+#include <utilmoneystr.h>
+#include <asyncrpcoperation.h>
+#include <asyncrpcqueue.h>
+#include <rpc/server.h>
 
 #include <stdint.h>
 

@@ -22,9 +22,9 @@
 #ifndef BITCOIN_SCRIPT_SCRIPT_EXT_H
 #define BITCOIN_SCRIPT_SCRIPT_EXT_H
 
-#include "script.h"
-#include "standard.h"
-#include "pubkey.h"
+#include <script/script.h>
+#include <script/standard.h>
+#include <pubkey.h>
 
 #include <vector>
 

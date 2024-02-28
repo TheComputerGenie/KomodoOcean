@@ -21,15 +21,15 @@
 #ifndef BITCOIN_KEYSTORE_H
 #define BITCOIN_KEYSTORE_H
 
-#include "key.h"
-#include "pubkey.h"
-#include "script/script.h"
-#include "script/standard.h"
-#include "script/script_ext.h"
-#include "sync.h"
-#include "zcash/Address.hpp"
-#include "zcash/NoteEncryption.hpp"
-#include "zcash/zip32.h"
+#include <key.h>
+#include <pubkey.h>
+#include <script/script.h>
+#include <script/standard.h>
+#include <script/script_ext.h>
+#include <sync.h>
+#include <zcash/Address.hpp>
+#include <zcash/NoteEncryption.hpp>
+#include <zcash/zip32.h>
 
 #include <boost/signals2/signal.hpp>
 #include <boost/variant.hpp>

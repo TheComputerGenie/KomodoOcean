@@ -18,13 +18,13 @@
  *                                                                            *
  ******************************************************************************/
 
-#include "policy/fees.h"
+#include <policy/fees.h>
 
-#include "amount.h"
-#include "primitives/transaction.h"
-#include "streams.h"
-#include "txmempool.h"
-#include "util.h"
+#include <amount.h>
+#include <primitives/transaction.h>
+#include <streams.h>
+#include <txmempool.h>
+#include <util.h>
 
 void TxConfirmStats::Initialize(std::vector<double>& defaultBuckets,
                                 unsigned int maxConfirms, double _decay, std::string _dataTypeString) {

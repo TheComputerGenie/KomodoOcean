@@ -18,16 +18,16 @@
  *                                                                            *
  ******************************************************************************/
 
-#include "script/sign.h"
+#include <script/sign.h>
 
-#include "primitives/transaction.h"
-#include "key.h"
-#include "keystore.h"
-#include "script/standard.h"
-#include "uint256.h"
-#include "cc/CCinclude.h"
-#include "cc/eval.h"
-#include "key_io.h"
+#include <primitives/transaction.h>
+#include <key.h>
+#include <keystore.h>
+#include <script/standard.h>
+#include <uint256.h>
+#include <cc/CCinclude.h>
+#include <cc/eval.h>
+#include <key_io.h>
 
 #include <boost/foreach.hpp>
 

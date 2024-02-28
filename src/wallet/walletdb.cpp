@@ -18,20 +18,20 @@
  *                                                                            *
  ******************************************************************************/
 
-#include "wallet/walletdb.h"
+#include <wallet/walletdb.h>
 
-#include "consensus/validation.h"
-#include "key_io.h"
-#include "main.h"
-#include "protocol.h"
-#include "serialize.h"
-#include "sync.h"
-#include "util.h"
-#include "utiltime.h"
-#include "wallet/wallet.h"
-#include "zcash/Proof.hpp"
-#include "komodo_defs.h"
-#include "komodo_bitcoind.h"
+#include <consensus/validation.h>
+#include <key_io.h>
+#include <main.h>
+#include <protocol.h>
+#include <serialize.h>
+#include <sync.h>
+#include <util.h>
+#include <utiltime.h>
+#include <wallet/wallet.h>
+#include <zcash/Proof.hpp>
+#include <komodo_defs.h>
+#include <komodo_bitcoind.h>
 
 #include <boost/filesystem.hpp>
 #include <boost/foreach.hpp>

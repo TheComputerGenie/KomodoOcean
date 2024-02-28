@@ -18,18 +18,18 @@
  *                                                                            *
  ******************************************************************************/
 
-#include "key_io.h"
-#include "main.h"
-#include "crypto/equihash.h"
-#include "komodo_globals.h"
-#include "util.h"
-#include "utilstrencodings.h"
+#include <key_io.h>
+#include <main.h>
+#include <crypto/equihash.h>
+#include <komodo_globals.h>
+#include <util.h>
+#include <utilstrencodings.h>
 
 #include <assert.h>
 #include <boost/assign/list_of.hpp>
 
-#include "chainparamsseeds.h"
-#include "consensus/merkle.h"
+#include <chainparamsseeds.h>
+#include <consensus/merkle.h>
 
 static CBlock CreateGenesisBlock(const char* pszTimestamp, const CScript& genesisOutputScript, uint32_t nTime, const uint256& nNonce, const std::vector<unsigned char>& nSolution, uint32_t nBits, int32_t nVersion, const CAmount& genesisReward) {
     // To create a genesis block for a new chain which is Overwintered:
@@ -88,7 +88,7 @@ static CBlock CreateGenesisBlock(uint32_t nTime, const uint256& nNonce, const st
  * + Contains no strange transactions
  */
 void *chainparams_commandline();
-#include "komodo_defs.h"
+#include <komodo_defs.h>
 int32_t ASSETCHAINS_BLOCKTIME = 60;
 uint64_t ASSETCHAINS_NK[2];
 

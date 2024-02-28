@@ -18,13 +18,13 @@
  *                                                                            *
  ******************************************************************************/
 
-#include "wallet_ismine.h"
+#include <wallet/wallet_ismine.h>
 
-#include "key.h"
-#include "keystore.h"
-#include "script/script.h"
-#include "script/standard.h"
-#include "cc/eval.h"
+#include <key.h>
+#include <keystore.h>
+#include <script/script.h>
+#include <script/standard.h>
+#include <cc/eval.h>
 
 #include <boost/foreach.hpp>
 

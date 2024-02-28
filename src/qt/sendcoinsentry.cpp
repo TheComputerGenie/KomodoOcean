@@ -3,20 +3,20 @@
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #if defined(HAVE_CONFIG_H)
-#include "config/bitcoin-config.h"
+#include <config/bitcoin-config.h>
 #endif
 
-#include "sendcoinsentry.h"
-#include "ui_sendcoinsentry.h"
+#include <qt/sendcoinsentry.h>
+#include <ui_sendcoinsentry.h>
 
-#include "addressbookpage.h"
-#include "addresstablemodel.h"
-#include "guiutil.h"
-#include "optionsmodel.h"
-#include "platformstyle.h"
-#include "walletmodel.h"
+#include <qt/addressbookpage.h>
+#include <qt/addresstablemodel.h>
+#include <qt/guiutil.h>
+#include <qt/optionsmodel.h>
+#include <qt/platformstyle.h>
+#include <qt/walletmodel.h>
 
-#include "key_io.h"
+#include <key_io.h>
 
 #include <QApplication>
 #include <QClipboard>

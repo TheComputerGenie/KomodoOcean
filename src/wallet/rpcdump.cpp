@@ -17,18 +17,18 @@
  *                                                                            *
  ******************************************************************************/
 
-#include "chain.h"
-#include "key_io.h"
-#include "rpc/server.h"
-#include "init.h"
-#include "main.h"
-#include "script/script.h"
-#include "script/standard.h"
-#include "sync.h"
-#include "util.h"
-#include "utiltime.h"
-#include "wallet.h"
-#include "komodo_nSPV_defs.h"
+#include <chain.h>
+#include <key_io.h>
+#include <rpc/server.h>
+#include <init.h>
+#include <main.h>
+#include <script/script.h>
+#include <script/standard.h>
+#include <sync.h>
+#include <util.h>
+#include <utiltime.h>
+#include <wallet/wallet.h>
+#include <komodo_nSPV_defs.h>
 #include <fstream>
 #include <stdint.h>
 

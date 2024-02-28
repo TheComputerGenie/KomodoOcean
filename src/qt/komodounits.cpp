@@ -2,10 +2,10 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "komodounits.h"
-#include "komodo_defs.h"
+#include <qt/komodounits.h>
+#include <komodo_defs.h>
 
-#include "primitives/transaction.h"
+#include <primitives/transaction.h>
 
 #include <QStringList>
 

@@ -17,8 +17,8 @@
  *                                                                            *
  ******************************************************************************/
 
-#include "checkpoints.h"
-#include "main.h"
+#include <checkpoints.h>
+#include <main.h>
 
 #include <stdint.h>
 #include <boost/foreach.hpp>

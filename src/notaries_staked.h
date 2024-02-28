@@ -2,8 +2,8 @@
 #ifndef NOTARIES_STAKED
 #define NOTARIES_STAKED
 
-#include "crosschain.h"
-#include "cc/CCinclude.h"
+#include <crosschain.h>
+#include <cc/CCinclude.h>
 
 static const int32_t iguanaPort = 9333;
 static const int8_t BTCminsigs = 13;

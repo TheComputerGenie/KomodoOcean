@@ -13,24 +13,24 @@
  *                                                                            *
  ******************************************************************************/
 #pragma once
-#include "uint256.h"
-#include "chain.h"
-#include "komodo_structs.h"
-#include "komodo_utils.h"
-#include "komodo_curve25519.h"
+#include <uint256.h>
+#include <chain.h>
+#include <komodo_structs.h>
+#include <komodo_utils.h>
+#include <komodo_curve25519.h>
 
-//#include "komodo_cJSON.h"
-//#include "komodo_bitcoind.h"
-//#include "komodo_interest.h"
+
+
+
 
 // Todo:
 // verify: reorgs
 
 
-//#include "komodo_kv.h"
-//#include "komodo_gateway.h"
-//#include "komodo_events.h"
-//#include "komodo_ccdata.h"
+
+
+
+
 #include <cstdint>
 
 const char KOMODO_STATE_FILENAME[] = "komodoevents";

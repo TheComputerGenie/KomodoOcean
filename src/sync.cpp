@@ -17,10 +17,10 @@
  *                                                                            *
  ******************************************************************************/
 
-#include "sync.h"
+#include <sync.h>
 
-#include "util.h"
-#include "utilstrencodings.h"
+#include <util.h>
+#include <utilstrencodings.h>
 
 #include <stdio.h>
 

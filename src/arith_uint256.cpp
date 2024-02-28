@@ -18,12 +18,12 @@
  *                                                                            *
  ******************************************************************************/
 
-#include "arith_uint256.h"
+#include <arith_uint256.h>
 
-#include "uint256.h"
-#include "utilstrencodings.h"
-#include "crypto/common.h"
-#include "util.h"
+#include <uint256.h>
+#include <utilstrencodings.h>
+#include <crypto/common.h>
+#include <util.h>
 
 #include <stdio.h>
 #include <string.h>

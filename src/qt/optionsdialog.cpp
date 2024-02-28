@@ -3,19 +3,19 @@
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #if defined(HAVE_CONFIG_H)
-#include "config/bitcoin-config.h"
+#include <config/bitcoin-config.h>
 #endif
 
-#include "optionsdialog.h"
-#include "ui_optionsdialog.h"
+#include <qt/optionsdialog.h>
+#include <ui_optionsdialog.h>
 
-#include "komodounits.h"
-#include "guiutil.h"
-#include "optionsmodel.h"
+#include <qt/komodounits.h>
+#include <qt/guiutil.h>
+#include <qt/optionsmodel.h>
 
-#include "netbase.h"
-#include "txdb.h" // for -dbcache defaults
-#include "main.h"
+#include <netbase.h>
+#include <txdb.h> // for -dbcache defaults
+#include <main.h>
 
 #include <QDataWidgetMapper>
 #include <QDir>

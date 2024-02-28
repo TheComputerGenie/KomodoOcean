@@ -18,11 +18,11 @@
 #include <vector>
 #include <cstdint>
 
-#include "komodo_defs.h"
-#include "komodo_extern_globals.h"
+#include <komodo_defs.h>
+#include <komodo_extern_globals.h>
 
-#include "uthash.h"
-#include "utlist.h"
+#include <uthash.h>
+#include <utlist.h>
 
 #define GENESIS_NBITS 0x1f00ffff
 #define KOMODO_MINRATIFY ((height < 90000) ? 7 : 11)
@@ -31,7 +31,7 @@
 
 #define KOMODO_ASSETCHAIN_MAXLEN 65
 
-#include "bits256.h"
+#include <bits256.h>
 #include <mutex>
 
 //extern std::mutex komodo_mutex;  //todo remove

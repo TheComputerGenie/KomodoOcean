@@ -19,48 +19,48 @@
  ******************************************************************************/
 
 #if defined(HAVE_CONFIG_H)
-#include "config/bitcoin-config.h"
+#include <config/bitcoin-config.h>
 #endif
 
-#include "init.h"
-#include "crypto/common.h"
-#include "primitives/block.h"
-#include "addrman.h"
-#include "amount.h"
-#include "checkpoints.h"
-#include "compat/sanity.h"
-#include "consensus/upgrades.h"
-#include "consensus/validation.h"
-#include "httpserver.h"
-#include "httprpc.h"
-#include "key.h"
-#include "notarisationdb.h"
-#include "komodo.h"
-#include "komodo_globals.h"
-#include "komodo_notary.h"
-#include "komodo_gateway.h"
-#include "main.h"
+#include <init.h>
+#include <crypto/common.h>
+#include <primitives/block.h>
+#include <addrman.h>
+#include <amount.h>
+#include <checkpoints.h>
+#include <compat/sanity.h>
+#include <consensus/upgrades.h>
+#include <consensus/validation.h>
+#include <httpserver.h>
+#include <httprpc.h>
+#include <key.h>
+#include <notarisationdb.h>
+#include <komodo.h>
+#include <komodo_globals.h>
+#include <komodo_notary.h>
+#include <komodo_gateway.h>
+#include <main.h>
 
 #ifdef ENABLE_MINING
-#include "key_io.h"
+#include <key_io.h>
 #endif
-#include "main.h"
-#include "metrics.h"
-#include "miner.h"
-#include "net.h"
-#include "rpc/server.h"
-#include "rpc/register.h"
-#include "script/standard.h"
-#include "scheduler.h"
-#include "txdb.h"
-#include "torcontrol.h"
-#include "ui_interface.h"
-#include "util.h"
-#include "utilmoneystr.h"
-#include "validationinterface.h"
+#include <main.h>
+#include <metrics.h>
+#include <miner.h>
+#include <net.h>
+#include <rpc/server.h>
+#include <rpc/register.h>
+#include <script/standard.h>
+#include <scheduler.h>
+#include <txdb.h>
+#include <torcontrol.h>
+#include <ui_interface.h>
+#include <util.h>
+#include <utilmoneystr.h>
+#include <validationinterface.h>
 #ifdef ENABLE_WALLET
-#include "wallet/wallet.h"
-#include "wallet/walletdb.h"
+#include <wallet/wallet.h>
+#include <wallet/walletdb.h>
 
 #endif
 #include <stdint.h>
@@ -88,23 +88,23 @@
 #include <libsnark/common/profiling.hpp>
 
 #if ENABLE_ZMQ
-#include "zmq/zmqnotificationinterface.h"
+#include <zmq/zmqnotificationinterface.h>
 #endif
 
 #if ENABLE_PROTON
-#include "amqp/amqpnotificationinterface.h"
+#include <amqp/amqpnotificationinterface.h>
 #endif
 
-#include "librustzcash.h"
+#include <librustzcash.h>
 
 using namespace std;
 
-#include "komodo_defs.h"
-#include "komodo_extern_globals.h"
-#include "assetchain.h"
+#include <komodo_defs.h>
+#include <komodo_extern_globals.h>
+#include <assetchain.h>
 
-#include "komodo_gateway.h"
-#include "rpc/net.h"
+#include <komodo_gateway.h>
+#include <rpc/net.h>
 #include <event2/event.h>
 extern void ThreadSendAlert();
 //extern bool komodo_dailysnapshot(int32_t height);  //todo remove

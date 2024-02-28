@@ -20,48 +20,48 @@
  *                                                                            *
  ******************************************************************************/
 
-#include "main.h"
-#include "sodium.h"
-#include "consensus/merkle.h"
+#include <main.h>
+#include <sodium.h>
+#include <consensus/merkle.h>
 
-#include "addrman.h"
-#include "alert.h"
-#include "arith_uint256.h"
-#include "importcoin.h"
-#include "chainparams.h"
-#include "checkpoints.h"
-#include "checkqueue.h"
-#include "consensus/upgrades.h"
-#include "consensus/validation.h"
-#include "deprecation.h"
-#include "init.h"
-#include "merkleblock.h"
-#include "metrics.h"
-#include "notarisationdb.h"
-#include "net.h"
-#include "pow.h"
-#include "script/interpreter.h"
-#include "txdb.h"
-#include "txmempool.h"
-#include "ui_interface.h"
-#include "undo.h"
-#include "util.h"
-#include "utilmoneystr.h"
-#include "validationinterface.h"
-#include "wallet/asyncrpcoperation_sendmany.h"
-#include "wallet/asyncrpcoperation_shieldcoinbase.h"
-#include "policy/fees.h"
-#include "notaries_staked.h"
-#include "komodo_extern_globals.h"
-#include "komodo_gateway.h"
-#include "komodo.h"
-#include "komodo_notary.h"
-#include "key_io.h"
-#include "komodo_utils.h"
-#include "komodo_bitcoind.h"
-#include "komodo_interest.h"
-#include "rpc/net.h"
-#include "cc/CCinclude.h"
+#include <addrman.h>
+#include <alert.h>
+#include <arith_uint256.h>
+#include <importcoin.h>
+#include <chainparams.h>
+#include <checkpoints.h>
+#include <checkqueue.h>
+#include <consensus/upgrades.h>
+#include <consensus/validation.h>
+#include <deprecation.h>
+#include <init.h>
+#include <merkleblock.h>
+#include <metrics.h>
+#include <notarisationdb.h>
+#include <net.h>
+#include <pow.h>
+#include <script/interpreter.h>
+#include <txdb.h>
+#include <txmempool.h>
+#include <ui_interface.h>
+#include <undo.h>
+#include <util.h>
+#include <utilmoneystr.h>
+#include <validationinterface.h>
+#include <wallet/asyncrpcoperation_sendmany.h>
+#include <wallet/asyncrpcoperation_shieldcoinbase.h>
+#include <policy/fees.h>
+#include <notaries_staked.h>
+#include <komodo_extern_globals.h>
+#include <komodo_gateway.h>
+#include <komodo.h>
+#include <komodo_notary.h>
+#include <key_io.h>
+#include <komodo_utils.h>
+#include <komodo_bitcoind.h>
+#include <komodo_interest.h>
+#include <rpc/net.h>
+#include <cc/CCinclude.h>
 
 #include <cstring>
 #include <algorithm>
@@ -84,7 +84,7 @@ using namespace std;
 # error "Zcash cannot be compiled without assertions."
 #endif
 
-#include "librustzcash.h"
+#include <librustzcash.h>
 
 /**
  * Global state
@@ -625,7 +625,7 @@ CBlockTreeDB *pblocktree = nullptr;
 
 // Komodo globals
 
-#include "komodo.h"
+#include <komodo.h>
 
 UniValue komodo_snapshot(int top) {
     LOCK(cs_main);
@@ -6935,11 +6935,11 @@ void static ProcessGetData(CNode* pfrom) {
     }
 }
 
-#include "komodo_nSPV_defs.h"
-#include "komodo_nSPV.h"            // shared defines, structs, serdes, purge functions
-#include "komodo_nSPV_fullnode.h"   // nSPV fullnode handling of the getnSPV request messages
-#include "komodo_nSPV_superlite.h"  // nSPV superlite client, issuing requests and handling nSPV responses
-#include "komodo_nSPV_wallet.h"     // nSPV_send and support functions, really all the rest is to support this
+#include <komodo_nSPV_defs.h>
+#include <komodo_nSPV.h>            // shared defines, structs, serdes, purge functions
+#include <komodo_nSPV_fullnode.h>   // nSPV fullnode handling of the getnSPV request messages
+#include <komodo_nSPV_superlite.h>  // nSPV superlite client, issuing requests and handling nSPV responses
+#include <komodo_nSPV_wallet.h>     // nSPV_send and support functions, really all the rest is to support this
 
 void komodo_netevent(std::vector<uint8_t> payload);
 bool static ProcessMessage(CNode* pfrom, string strCommand, CDataStream& vRecv, int64_t nTimeReceived) {

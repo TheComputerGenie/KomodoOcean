@@ -21,16 +21,16 @@
 #define BITCOIN_ADDRMAN_H
 
 
-#include "netbase.h"
-#include "protocol.h"
-#include "random.h"
-#include "sync.h"
-#include "timedata.h"
-#include "util.h"
-#include "fs.h"
-#include "clientversion.h"
-#include "hash.h"
-#include "netbase.h"
+#include <netbase.h>
+#include <protocol.h>
+#include <random.h>
+#include <sync.h>
+#include <timedata.h>
+#include <util.h>
+#include <fs.h>
+#include <clientversion.h>
+#include <hash.h>
+#include <netbase.h>
 
 #include <map>
 #include <set>

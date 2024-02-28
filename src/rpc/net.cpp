@@ -17,18 +17,18 @@
  *                                                                            *
  ******************************************************************************/
 
-#include "rpc/server.h"
+#include <rpc/server.h>
 
-#include "clientversion.h"
-#include "main.h"
-#include "net.h"
-#include "netbase.h"
-#include "protocol.h"
-#include "sync.h"
-#include "util.h"
-#include "version.h"
-#include "deprecation.h"
-#include "komodo_defs.h"
+#include <clientversion.h>
+#include <main.h>
+#include <rpc/net.h>
+#include <netbase.h>
+#include <rpc/protocol.h>
+#include <sync.h>
+#include <util.h>
+#include <version.h>
+#include <deprecation.h>
+#include <komodo_defs.h>
 
 #include <boost/foreach.hpp>
 

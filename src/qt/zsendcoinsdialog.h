@@ -5,7 +5,7 @@
 #ifndef KOMODO_QT_ZSENDCOINSDIALOG_H
 #define KOMODO_QT_ZSENDCOINSDIALOG_H
 
-#include "walletmodel.h"
+#include <qt/walletmodel.h>
 
 #include <QDialog>
 #include <QMessageBox>

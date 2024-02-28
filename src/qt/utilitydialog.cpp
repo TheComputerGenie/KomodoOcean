@@ -3,25 +3,25 @@
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #if defined(HAVE_CONFIG_H)
-#include "config/bitcoin-config.h"
+#include <config/bitcoin-config.h>
 #endif
 
-#include "utilitydialog.h"
+#include <qt/utilitydialog.h>
 
-#include "ui_helpmessagedialog.h"
+#include <ui_helpmessagedialog.h>
 
-#include "komodooceangui.h"
-#include "clientmodel.h"
-#include "guiconstants.h"
-#include "intro.h"
+#include <qt/komodooceangui.h>
+#include <qt/clientmodel.h>
+#include <qt/guiconstants.h>
+#include <qt/intro.h>
 #ifdef ENABLE_BIP70
-#include "paymentrequestplus.h"
+#include <qt/paymentrequestplus.h>
 #endif
-#include "guiutil.h"
+#include <qt/guiutil.h>
 
-#include "clientversion.h"
-#include "init.h"
-#include "util.h"
+#include <clientversion.h>
+#include <init.h>
+#include <util.h>
 
 #include <cstdio>
 

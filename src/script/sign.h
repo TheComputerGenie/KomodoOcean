@@ -21,7 +21,7 @@
 #ifndef BITCOIN_SCRIPT_SIGN_H
 #define BITCOIN_SCRIPT_SIGN_H
 
-#include "script/interpreter.h"
+#include <script/interpreter.h>
 
 class CKey;
 class CKeyID;

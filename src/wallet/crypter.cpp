@@ -17,12 +17,12 @@
  *                                                                            *
  ******************************************************************************/
 
-#include "crypter.h"
+#include <wallet/crypter.h>
 
-#include "script/script.h"
-#include "script/standard.h"
-#include "streams.h"
-#include "util.h"
+#include <script/script.h>
+#include <script/standard.h>
+#include <streams.h>
+#include <util.h>
 
 #include <string>
 #include <vector>

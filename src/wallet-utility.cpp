@@ -2,15 +2,15 @@
 #include <string>
 
 // Include local headers
-#include "wallet/walletdb.h"
-#include "util.h"
-#include "base58.h"
-#include "wallet/crypter.h"
+#include <wallet/walletdb.h>
+#include <util.h>
+#include <base58.h>
+#include <wallet/crypter.h>
 #include <boost/foreach.hpp>
 
-#include "komodo_defs.h"
+#include <komodo_defs.h>
 
-#include "assetchain.h"
+#include <assetchain.h>
 assetchain chainName;
 
 int64_t MAX_MONEY = 200000000 * 100000000LL;

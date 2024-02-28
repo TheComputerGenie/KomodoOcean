@@ -12,14 +12,14 @@
  * Removal or modification of this copyright notice is prohibited.            *
  *                                                                            *
  ******************************************************************************/
-#include "komodo_bitcoind.h"
-#include "komodo_globals.h"
-#include "komodo.h" // komodo_voutupdate()
-#include "komodo_utils.h" // OS_milliseconds
-#include "komodo_notary.h"
-#include "komodo.h"
-#include "rpc/net.h"
-#include "init.h"
+#include <komodo_bitcoind.h>
+#include <komodo_globals.h>
+#include <komodo.h> // komodo_voutupdate()
+#include <komodo_utils.h> // OS_milliseconds
+#include <komodo_notary.h>
+#include <komodo.h>
+#include <rpc/net.h>
+#include <init.h>
 
 
 /************************************************************************

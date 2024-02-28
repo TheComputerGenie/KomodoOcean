@@ -3,14 +3,14 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "wallet/wallet_fees.h"
+#include <wallet/wallet_fees.h>
 
-#include "policy/policy.h"
-#include "txmempool.h"
-#include "util.h"
-#include "coincontrol.h"
-#include "main.h"
-#include "wallet/wallet.h"
+#include <policy/policy.h>
+#include <txmempool.h>
+#include <util.h>
+#include <coincontrol.h>
+#include <main.h>
+#include <wallet/wallet.h>
 
 
 CAmount GetRequiredFee(unsigned int nTxBytes) {

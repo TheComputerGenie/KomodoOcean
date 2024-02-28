@@ -2,19 +2,19 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include "zaddresstablemodel.h"
+#include <qt/zaddresstablemodel.h>
 
-#include "komodo_defs.h"
+#include <komodo_defs.h>
 
-#include "guiutil.h"
-#include "walletmodel.h"
-#include "platformstyle.h"
-#include "key_io.h"
+#include <qt/guiutil.h>
+#include <qt/walletmodel.h>
+#include <qt/platformstyle.h>
+#include <key_io.h>
 
-#include "base58.h"
-#include "wallet/wallet.h"
+#include <base58.h>
+#include <wallet/wallet.h>
 
-#include "rpc/server.h"
+#include <rpc/server.h>
 #include <algorithm>
 #include <QFont>
 #include <QDebug>

@@ -23,16 +23,16 @@
 
 #include <list>
 
-#include "addressindex.h"
-#include "spentindex.h"
-#include "amount.h"
-#include "coins.h"
-#include "primitives/transaction.h"
-#include "sync.h"
+#include <addressindex.h>
+#include <spentindex.h>
+#include <amount.h>
+#include <coins.h>
+#include <primitives/transaction.h>
+#include <sync.h>
 
 #undef foreach
-#include "boost/multi_index_container.hpp"
-#include "boost/multi_index/ordered_index.hpp"
+#include <boost/multi_index_container.hpp>
+#include <boost/multi_index/ordered_index.hpp>
 
 class CAutoFile;
 

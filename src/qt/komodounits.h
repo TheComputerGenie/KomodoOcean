@@ -5,7 +5,7 @@
 #ifndef KOMODO_QT_KOMODOUNITS_H
 #define KOMODO_QT_KOMODOUNITS_H
 
-#include "amount.h"
+#include <amount.h>
 
 #include <QAbstractListModel>
 #include <QString>

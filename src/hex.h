@@ -3,7 +3,7 @@
  */
 #pragma once
 #include <stdint.h>
-#include "bits256.h"
+#include <bits256.h>
 
 #ifdef __cplusplus
 extern "C"

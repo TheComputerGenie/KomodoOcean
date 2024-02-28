@@ -19,22 +19,22 @@
  ******************************************************************************/
 
 #if defined(HAVE_CONFIG_H)
-#include "config/bitcoin-config.h"
+#include <config/bitcoin-config.h>
 #endif
 
-#include "main.h"
-#include "net.h"
+#include <main.h>
+#include <net.h>
 
-#include "addrman.h"
-#include "chainparams.h"
-#include "clientversion.h"
-#include "primitives/transaction.h"
-#include "scheduler.h"
-#include "ui_interface.h"
-#include "crypto/common.h"
-#include "komodo_defs.h"
-#include "komodo_globals.h"
-#include "notaries_staked.h"
+#include <addrman.h>
+#include <chainparams.h>
+#include <clientversion.h>
+#include <primitives/transaction.h>
+#include <scheduler.h>
+#include <ui_interface.h>
+#include <crypto/common.h>
+#include <komodo_defs.h>
+#include <komodo_globals.h>
+#include <notaries_staked.h>
 
 #ifdef _WIN32
 #include <string.h>

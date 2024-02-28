@@ -18,27 +18,27 @@
  *                                                                            *
  ******************************************************************************/
 
-#include "amount.h"
-#include "chainparams.h"
-#include "consensus/consensus.h"
-#include "consensus/validation.h"
-#include "core_io.h"
-#include "komodo_bitcoind.h"
+#include <amount.h>
+#include <chainparams.h>
+#include <consensus/consensus.h>
+#include <consensus/validation.h>
+#include <core_io.h>
+#include <komodo_bitcoind.h>
 #ifdef ENABLE_MINING
-#include "crypto/equihash.h"
+#include <crypto/equihash.h>
 #endif
-#include "init.h"
-#include "main.h"
-#include "metrics.h"
-#include "miner.h"
-#include "net.h"
-#include "pow.h"
-#include "rpc/server.h"
-#include "txmempool.h"
-#include "util.h"
-#include "validationinterface.h"
+#include <init.h>
+#include <main.h>
+#include <metrics.h>
+#include <miner.h>
+#include <rpc/net.h>
+#include <pow.h>
+#include <rpc/server.h>
+#include <txmempool.h>
+#include <util.h>
+#include <validationinterface.h>
 #ifdef ENABLE_WALLET
-#include "wallet/wallet.h"
+#include <wallet/wallet.h>
 #endif
 
 #include <stdint.h>

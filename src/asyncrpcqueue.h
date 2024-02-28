@@ -20,7 +20,7 @@
 #ifndef ASYNCRPCQUEUE_H
 #define ASYNCRPCQUEUE_H
 
-#include "asyncrpcoperation.h"
+#include <asyncrpcoperation.h>
 
 #include <iostream>
 #include <string>

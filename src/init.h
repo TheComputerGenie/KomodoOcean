@@ -23,7 +23,7 @@
 
 #include <string>
 
-#include "zcash/JoinSplit.hpp"
+#include <zcash/JoinSplit.hpp>
 
 class CScheduler;
 class CWallet;

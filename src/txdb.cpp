@@ -19,18 +19,18 @@
  ******************************************************************************/
 
 #include <sys/stat.h>
-#include "txdb.h"
+#include <txdb.h>
 
-#include "chainparams.h"
-#include "hash.h"
-#include "main.h"
-#include "pow.h"
-#include "uint256.h"
-#include "core_io.h"
-#include "komodo_bitcoind.h"
+#include <chainparams.h>
+#include <hash.h>
+#include <main.h>
+#include <pow.h>
+#include <uint256.h>
+#include <core_io.h>
+#include <komodo_bitcoind.h>
 
-#include "ui_interface.h"
-#include "init.h"
+#include <ui_interface.h>
+#include <init.h>
 
 #include <stdint.h>
 

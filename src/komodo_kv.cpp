@@ -12,10 +12,10 @@
  * Removal or modification of this copyright notice is prohibited.            *
  *                                                                            *
  ******************************************************************************/
-#include "komodo_kv.h"
-#include "komodo_globals.h"
-#include "komodo_utils.h" // portable_mutex_lock
-#include "komodo_curve25519.h" // for komodo_kvsigverify
+#include <komodo_kv.h>
+#include <komodo_globals.h>
+#include <komodo_utils.h> // portable_mutex_lock
+#include <komodo_curve25519.h> // for komodo_kvsigverify
 #include <mutex>
 
 std::mutex kv_mutex;

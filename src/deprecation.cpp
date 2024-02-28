@@ -17,15 +17,15 @@
  *                                                                            *
  ******************************************************************************/
 
-#include "deprecation.h"
+#include <deprecation.h>
 
-#include "alert.h"
-#include "clientversion.h"
-#include "init.h"
-#include "ui_interface.h"
-#include "util.h"
-#include "chainparams.h"
-#include "komodo_globals.h"
+#include <alert.h>
+#include <clientversion.h>
+#include <init.h>
+#include <ui_interface.h>
+#include <util.h>
+#include <chainparams.h>
+#include <komodo_globals.h>
 
 static const std::string CLIENT_VERSION_STR = FormatVersion(CLIENT_VERSION);
 

@@ -18,9 +18,9 @@
 
 #include <memory>
 
-#include "pubkey.h"
-#include "script/script.h"
-#include "cryptoconditions/include/cryptoconditions.h"
+#include <pubkey.h>
+#include <script/script.h>
+#include <cryptoconditions/include/cryptoconditions.h>
 
 
 extern uint32_t ASSETCHAINS_CC;

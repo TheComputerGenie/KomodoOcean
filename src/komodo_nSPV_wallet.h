@@ -17,11 +17,11 @@
 #ifndef KOMODO_NSPVWALLET_H
 #define KOMODO_NSPVWALLET_H
 
-#include "komodo_interest.h"
+#include <komodo_interest.h>
 
 // nSPV wallet uses superlite functions (and some komodod built in functions) to implement nSPV_spend
-#include "komodo_bitcoind.h"
-#include "rpc/rawtransaction.h"
+#include <komodo_bitcoind.h>
+#include <rpc/rawtransaction.h>
 
 int32_t NSPV_validatehdrs(struct NSPV_ntzsproofresp *ptr) {
     int32_t i,height,txidht;

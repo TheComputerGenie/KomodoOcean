@@ -14,7 +14,7 @@
  *                                                                            *
  ******************************************************************************/
 
-#include "komodo_structs.h" // for parse_error
+#include <komodo_structs.h> // for parse_error
 
 #include <cstdint>
 #include <string>

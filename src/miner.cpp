@@ -18,55 +18,55 @@
  *                                                                            *
  ******************************************************************************/
 
-#include "pubkey.h"
-#include "miner.h"
-#include "komodo_utils.h"
-#include "komodo_globals.h"
-#include "komodo_bitcoind.h"
-#include "komodo_gateway.h"
-#include "komodo_defs.h"
-#include "cc/CCinclude.h"
+#include <pubkey.h>
+#include <miner.h>
+#include <komodo_utils.h>
+#include <komodo_globals.h>
+#include <komodo_bitcoind.h>
+#include <komodo_gateway.h>
+#include <komodo_defs.h>
+#include <cc/CCinclude.h>
 #ifdef ENABLE_MINING
-#include "pow/tromp/equi_miner.h"
+#include <pow/tromp/equi_miner.h>
 #endif
 
-#include "amount.h"
-#include "chainparams.h"
-#include "importcoin.h"
-#include "consensus/consensus.h"
-#include "consensus/merkle.h"
-#include "consensus/upgrades.h"
-#include "consensus/validation.h"
+#include <amount.h>
+#include <chainparams.h>
+#include <importcoin.h>
+#include <consensus/consensus.h>
+#include <consensus/merkle.h>
+#include <consensus/upgrades.h>
+#include <consensus/validation.h>
 #ifdef ENABLE_MINING
-#include "crypto/equihash.h"
+#include <crypto/equihash.h>
 #endif
-#include "hash.h"
-#include "key_io.h"
-#include "main.h"
-#include "metrics.h"
-#include "net.h"
-#include "pow.h"
-#include "primitives/transaction.h"
-#include "random.h"
-#include "timedata.h"
-#include "ui_interface.h"
-#include "util.h"
-#include "utilmoneystr.h"
-#include "hex.h"
+#include <hash.h>
+#include <key_io.h>
+#include <main.h>
+#include <metrics.h>
+#include <net.h>
+#include <pow.h>
+#include <primitives/transaction.h>
+#include <random.h>
+#include <timedata.h>
+#include <ui_interface.h>
+#include <util.h>
+#include <utilmoneystr.h>
+#include <hex.h>
 
 #ifdef ENABLE_WALLET
-#include "wallet/wallet.h"
+#include <wallet/wallet.h>
 #endif
 
-#include "zcash/Address.hpp"
-#include "transaction_builder.h"
+#include <zcash/Address.hpp>
+#include <transaction_builder.h>
 
-#include "sodium.h"
+#include <sodium.h>
 
-#include "notaries_staked.h"
-#include "komodo_notary.h"
-#include "komodo_bitcoind.h"
-#include "komodo_extern_globals.h"
+#include <notaries_staked.h>
+#include <komodo_notary.h>
+#include <komodo_bitcoind.h>
+#include <komodo_extern_globals.h>
 
 #include <boost/thread.hpp>
 #include <boost/tuple/tuple.hpp>

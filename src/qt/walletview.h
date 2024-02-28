@@ -5,7 +5,7 @@
 #ifndef KOMODO_QT_WALLETVIEW_H
 #define KOMODO_QT_WALLETVIEW_H
 
-#include "amount.h"
+#include <amount.h>
 
 #include <QStackedWidget>
 

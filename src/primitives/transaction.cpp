@@ -18,13 +18,13 @@
  *                                                                            *
  ******************************************************************************/
 
-#include "primitives/transaction.h"
+#include <primitives/transaction.h>
 
-#include "hash.h"
-#include "tinyformat.h"
-#include "utilstrencodings.h"
+#include <hash.h>
+#include <tinyformat.h>
+#include <utilstrencodings.h>
 
-#include "librustzcash.h"
+#include <librustzcash.h>
 
 JSDescription::JSDescription(
     bool makeGrothProof,
